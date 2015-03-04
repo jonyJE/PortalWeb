@@ -1,0 +1,51 @@
+﻿table
+{
+    width: 100%;
+    table-layout: auto;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+    table caption
+    {
+        text-align: left;
+        font-weight: bold;
+        font-size: 12px !important;
+    }
+
+th input[type=checkbox], td input[type=checkbox]
+{
+    text-align: center !important;
+    vertical-align: !important;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=checkbox].checked ~ th
+{
+    background-position: 5% -19px !important;
+    background-color: #E5F6FF !important;
+    border: 1px solid #D1EFFF !important;
+}
+
+thead, tfoot
+{
+    background-position: top;
+    border: 1px solid #72B42D;
+    background-color: #DEEDF8;
+    color: #2e6e9e !important;
+}
+
+
+tbody
+{
+    border: 1px solid #72B42D;
+}
+
+.seleccionDato
+{
+    background-color: Silver;
+}

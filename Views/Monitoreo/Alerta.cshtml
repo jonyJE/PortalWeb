@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Alerta";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<div id="cuerpo">
+    <div id="monitoreo">
+        <ol class="rastro">
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+            <li><a href="@Url.Action("Index", "Monitoreo")">Monitoreo e Información Territorial</a></li>
+
+            <li class="activo">Alerta Temprana, Terra-i </li>
+        </ol>
+
+        <div class="subcontenedor">
+
+            <div class="col-md-12">
+                <h1>Alerta Temprana, Terra-i </h1>
+
+                <p>
+                    Como parte del convenio firmado este lunes entre el Ministerio del Ambiente (MINAM) y el Centro Internacional de Agricultura Tropical (CIAT), en la Dirección General de Ordenamiento Territorial (DGOT) se realizó la presentación del Programa TERRA-i Perú, que comprende la aplicación de un conjunto de herramientas diseñadas para la detección y alerta temprana de los cambios de uso del territorio mediante el uso de imágenes satelitales.
+
+
+                </p>
+
+                <p>
+                    <img src="/resources/images/thumbnails/alerta1.png" />
+                </p>
+
+                <p>
+                    Esta herramienta proporciona información sobre los cambios que se originan en el territorio cada 16 días y que son ocasionados principalmente por el desarrollo de diversas actividades humanas, empleándose para tal fin imágenes de satélite MODIS y TRMM de 250 metros de resolución. Esto lo convierte en un insumo importante para las actividades relacionadas al aprovechamiento sostenible y la conservación de los recursos naturales, la biodiversidad, la adaptación al cambio climático, la gestión de riesgos de desastres, entre otros, pero en especial para el diseño de políticas públicas que permitan orientar las diversas acciones de intervención en el territorio en el marco del Ordenamiento Territorial.
+
+                </p>
+
+
+                <p>
+
+                    <div class="limpiar">
+                        <a href="http://terra-i.org/terra-i/data/data-terra-i_peru" class="btn" id="btnenviar">
+                            Ir a Terra-i
+                        </a>
+                    </div>
+                </p>
+
+                <div class="limpiar"></div>
+                <div class="espaciobottom"></div>
+            </div>
+         </div>
+             
+    </div>
+</div>
+
+        @section PageScriptSection{
+
+        }
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+﻿/* {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}*/
+* {
+    margin: 0;
+}
+
+html, body, iframe {
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+    text-align: justify;
+    background-repeat: repeat;
+    font-family: Calibri,Verdana,Helvetica !important;
+    font-size: 11.5px !important;
+    background-color: #72C956;
+    overflow-y: scroll;
+}
+
+#contenedor {
+    margin: 0;
+    padding: 0;
+}
+
+#cabecera {
+    margin: 0;
+    padding: 0;
+}
+
+#cuerpo {
+}
+
+#pie {
+    font-size:14px;
+    text-align:center;
+}
+
+header, footer, section, nav, article, aside, hgroup {
+    display: block;
+}

@@ -1,0 +1,23 @@
+﻿@{
+    var alertas = System.JCA.Web.Behavior.JCABootstrapper.Instance.Alerts;
+    var count = alertas.Count();
+}
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon-bell-alt icon-animated-bell">
+</i><span class="badge badge-important">@count</span> </a>
+<ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-closer">
+    <li class="nav-header"><i class="icon-warning-sign"></i>@(count == 0 ? "No hay alertas" : string.Format("{0} Alertas", count))
+    </li>
+    @foreach (var alert in alertas)
+    {
+        <li><a href="#">
+            <div class="clearfix">
+                <span class="pull-left"><i class="btn btn-mini no-hover btn-pink icon-comment"></i>New
+                    Comments </span><span class="pull-right badge badge-info">+12</span>
+            </div>
+        </a></li>
+    }
+    @if (count > 0)
+    {
+        <li><a href="#">Ver todas las alertas <i class="icon-arrow-right"></i></a></li>
+    }
+</ul>

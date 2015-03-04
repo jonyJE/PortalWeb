@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Inicio de Sesión</title>
+
+    <meta name="description" content="Inicio de sesión" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--basic styles-->
+
+    <link href="@Url.Content("~/resources/assets/css/bootstrap.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/resources/assets/css/bootstrap-responsive.min.css")" rel="stylesheet" />
+    <link rel="stylesheet" href="@Url.Content("~/resources/assets/css/font-awesome.min.css")" />
+
+    <!--[if IE 7]>
+      <link rel="stylesheet" href="@Url.Content("~/resources/assets/css/font-awesome-ie7.min.css")" />
+    <![endif]-->
+    <!--page specific plugin styles-->
+    <!--fonts-->
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+
+    <!--ace styles-->
+
+    <link rel="stylesheet" href="@Url.Content("~/resources/assets/css/ace.min.css")" />
+    
+    <link rel="stylesheet" href="@Url.Content("~/resources/assets/css/ace-responsive.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/resources/assets/css/ace-skins.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/resources/css/jquery.pnotify.default.css")" />
+
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="@Url.Content("~/resources/assets/css/ace-ie.min.css")" />
+    <![endif]-->
+    <!--inline styles related to this page-->
+</head>
+
+<body class="login-layout">
+    <input type="hidden" value="@(Request.QueryString["ReturnUrl"] ?? "/")" id="returnUrl" />
+    <div class="main-container container-fluid">
+        <div class="main-content">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="login-container">
+                        <div class="space-6"></div>
+                        <div class="row-fluid">
+                            <div class="position-relative">
+                                @Html.Partial("LoginBox")
+                                @Html.Partial("ForgotBox")
+                                @Html.Partial("SignupBox")
+                            </div><!--/position-relative-->
+                        </div>
+                    </div>
+                </div><!--/.span-->
+            </div><!--/.row-fluid-->
+        </div>
+    </div><!--/.main-container-->
+    <!--basic scripts-->
+    <!--[if !IE]>-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <!--<![endif]-->
+    <!--[if IE]>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if !IE]>-->
+
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='@Url.Content("~/resources/assets/js/jquery-2.0.3.min.js")'>" + "<" + "/script>");
+    </script>
+
+    <!--<![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript">
+     window.jQuery || document.write("<script src='@Url.Content("~/resources/assets/js/jquery-1.10.2.min.js")'>"+"<"+"/script>");
+    </script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        if ("ontouchend" in document) document.write("<script src='@Url.Content("~/resources/assets/js/jquery.mobile.custom.min.js")'>" + "<" + "/script>");
+    </script>
+    <script src="@Url.Content("~/resources/assets/js/bootstrap.min.js")"></script>
+
+    <!--page specific plugin scripts-->
+    <!--ace scripts-->
+
+    <script src="@Url.Content("~/resources/assets/js/ace-elements.min.js")"></script>
+    <script src="@Url.Content("~/resources/assets/js/ace.min.js")"></script>
+
+    <!--inline scripts related to this page-->
+    <script type="text/javascript" src="@Url.Content("~/resources/js/jquery.pnotify.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/resources/js/jquery/jquery.validate.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/resources/js/user.js")"></script>
+</body>
+</html>

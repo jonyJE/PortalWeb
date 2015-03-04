@@ -1,0 +1,107 @@
+﻿
+.izquierda {
+float: left ;
+}
+.derecha {
+float: right ;
+}
+
+a {
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #6d7f2a;
+  outline: none !important;
+}
+a:hover {
+  text-decoration: none;color: #222222;
+}
+a:hover h1, a:hover h2, a:hover h3, a:hover h4 {
+  color: #6d7f2a;
+}
+a:focus, a:active {
+  outline: none !important;
+  text-decoration: none;
+}
+a h1, a h2, a h3, a h4 {
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #4e3a1f;
+}
+dl {
+  margin-bottom: 10px;
+}
+dl dt {
+  float: left;
+}
+dl dd {
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+
+h1 {
+  font-size: 28px;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+hr {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+p {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  font-family: "Arial", sans-serif;
+
+}
+.limpiar{
+	clear:both;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
+.centrar
+{ text-align:center}
+label {
+display: inline-block;
+margin-bottom: 5px;
+ font-weight:lighter !important;

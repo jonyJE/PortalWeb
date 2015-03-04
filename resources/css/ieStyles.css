@@ -1,0 +1,34 @@
+.header .adsk-mast-topnav {
+	background-image: url(../../images/meganav_bg_01.png); 
+}
+
+.adsk-nav-tier1 a:hover, .adsk-nav-tier1 a.active {
+	background-image: url(../../images/meganav_bg_02.png);
+}
+
+.adsk-product-banner {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aafefefe', endColorstr='#fff3f3f3');
+}
+.adsk-product-banner[style*="background-image"] {
+	filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+}
+.dog-ear-box:before {
+	width: 17px;
+	height: 17px;
+	background: url(../../images/ie-DogEar.png) 0 0 no-repeat;
+}
+
+.adskcol-13, .adskcol-14, .adskcol-07, .adsk-prod-topfeatures {
+	background-image: url(../../images/border-dadada.png);
+	background-repeat: repeat-y;
+}
+.adskcol-13, .adskcol-14 {
+	background-position: 64.19753% 0;
+}
+.adskcol-07 {
+	background-position: 28.39506% 0;
+}
+.adsk-prod-topfeatures {
+	background-position: 100% 0;
+}
+

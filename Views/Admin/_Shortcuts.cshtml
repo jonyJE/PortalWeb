@@ -1,0 +1,21 @@
+﻿@{
+    var shortcuts = System.JCA.Web.Behavior.JCABootstrapper.Instance.Shortcuts;
+}
+@if (shortcuts.Count() > 0)
+{
+    <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+        <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+            @foreach (var sc in shortcuts)
+            {
+                <a class="btn btn-small @sc.Color" href="@Url.Action(sc.Action, sc.Controller)"><i
+                    class="@sc.Icon"></i></a>
+            }
+        </div>
+        <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+            @foreach (var sc in shortcuts)
+            {
+                <a class="btn @sc.Color" href="@Url.Action(sc.Action, sc.Controller)"></a>
+            }
+        </div>
+    </div>
+}

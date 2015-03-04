@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "Geoservicios | Contáctenos";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<div id="cuerpo">
+    <div id="ayuda">
+        <ol class="rastro">
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+
+            <li class="activo">Contáctenos</li>
+        </ol>
+        <div class="subcontenedor">
+
+
+
+            <div class="col-md-7">
+
+                <h2>Ayuda</h2>
+
+
+                <section id="bloqueayuda">
+
+                    <article class="item">
+                        <figure class="icon"><i class="fa fa-question-circle"></i></figure>
+                        <header>Suspendisse eleifend massa commodo porta lacus bibendum?</header>
+
+                        <aside><a class="btn" href="#">descargar</a></aside>
+
+                    </article>
+                    <article class="item">
+                        <figure class="icon"><i class="fa fa-question-circle"></i></figure>
+                        <header>Suspendisse eleifend massa commodo porta lacus bibendum?</header>
+
+                        <aside><a class="btn" href="#">descargar</a></aside>
+
+                    </article>
+                    <article class="item">
+                        <figure class="icon"><i class="fa fa-question-circle"></i></figure>
+                        <header>Suspendisse eleifend massa commodo porta lacus bibendum?</header>
+
+                        <aside><a class="btn" href="#">descargar</a></aside>
+
+                    </article>
+                    <article class="item">
+                        <figure class="icon"><i class="fa fa-question-circle"></i></figure>
+                        <header>Suspendisse eleifend massa commodo porta lacus bibendum?</header>
+
+                        <aside><a class="btn" href="#">descargar</a></aside>
+
+                    </article>
+
+                </section>
+
+            </div>
+
+            <div class="col-md-5">
+                <h2>Contáctenos</h2>
+                <form>
+                    <p>
+                        <label> Nombre:[*]</label>
+                        <input type="text" id="nombrebox">
+                    </p>
+
+                    <p>
+                        <label>
+                            E-mail[*]
+                        </label>
+                        <input type="text" id="emailbox">
+                    </p>
+                    <p>
+                        <label>
+                            Asunto[*]
+                        </label>
+                        <input type="text" id="asuntobox">
+                    </p>
+                    <p>
+                        <label>
+                            Mensaje[*]
+                        </label>
+                        <textarea name="textarea" rows="4" cols="25"></textarea>
+                    </p>
+                    <p>
+                        <small>
+                            No olvide que los campos señalados con un signo [*] son obligatorios
+                        </small>
+                    </p>
+                    <div class="limpiar">
+                        <button type="submit" id="btnenviar">
+                            Enviar
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+
+        </div>
+        <div class="limpiar"></div>
+    </div>
+</div>
+
+
+

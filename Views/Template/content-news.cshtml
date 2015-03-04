@@ -1,0 +1,363 @@
+﻿@model AecFramework.Cms.Content
+@{
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+    var latest = AecFramework.Cms.Content.GetList(AecFramework.Cms.ListMode.Recent, Model.SectionId, null, AecFramework.Cms.ContentStatus.Active, 1, 50);
+    var order = new Func<AecFramework.Cms.Content, int>(i =>
+    {
+        var result = 0;
+
+        foreach (var cat in Model.Categories)
+            if (i.Categories.Contains(cat))
+                result++;
+
+        foreach (var tag in Model.Tags)
+            if (i.Tags.Contains(tag))
+                result++;
+
+        return result;
+    });
+}
+@section HeaderSection{
+    <script src="~/resources/js/social-likes.min.js"></script>
+}
+
+<div class="section main">
+   
+        <div class="adsk-breadcrumb breadcrumb">
+
+            <div class="section adsk-breadcrumb container setPos">
+                <ul class="adsk-inlineList">
+                    <li>
+                        <a href="@Url.Action("Index", "Home")"><i class="fa fa-home"></i> Inicio</a>
+                    </li>
+
+                    <li><a href="@Url.SectionUrl(Model.Section)"><i class="fa fa-bars"></i> @Model.Section.Title</a></li>
+
+                    <li>
+                        <i class="fa fa-rss"></i>  @Model.Title
+                    </li>
+
+
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="small-banner banner">
+            <div class="section adsk-static-banner adsk-authorBG expand"
+                 style="height: 60px;
+">
+                <div class="grid adsk-industry-banner-image">
+                    <div class="parbase adsk-image image"></div>
+                </div>
+                <div class="banner-text-block plx">
+                  
+                        <h1 class="s0 allCaps dkGrey"><i class="fa fa-rss"></i>  <b>@Model.Title</b></h1><br />
+                  
+                   
+            </div>
+
+          
+        </div>
+
+
+    </div>
+
+
+    
+
+    <div class="container content">
+        <div class="col adsk-content colleft">
+            <div class="bim-intro">
+
+
+
+
+                <h2 class="s3 pc-brand s3-b" style="margin-bottom:20px;">
+
+                    <i class="fa fa-calendar"></i> Fecha: @(Model.Created.ToString("dd/MM/yyyy"))
+
+                    </h2>
+
+
+                    <div class="clearfix"></div>
+                    <p style="padding-right:20px;">
+
+                        <span class="s4-lh21">@Model.Description</span>
+                    </p>
+
+                    <p>
+                        <div id="rawcontent">
+                            <div class="imgstyle">
+                               
+                    <img src="@Url.ContentImage(Model, 800, 600, false)" />
+                     <!--
+                                <img src="http://jazani.ddns.net:90/CmsContents/Images/titulo-2-noticia-home-30.nocrop800x600.jpg" />
+-->
+
+                            </div>
+
+                            @Html.Raw(Model.Body)
+
+                            <br />
+
+                        </div>
+
+
+                    </p>
+                    <p>
+
+                        <table>
+                            <tr>
+                                <td style="padding-top:10px; width:100px">
+                                    <div class="s3 mdGrey">
+
+                                        <b><i class="fa fa-tags"></i> Tags:</b>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    @foreach (var tag in Model.Tags)
+                                    {
+                                        if (!string.IsNullOrEmpty(tag))
+                                        {
+                                            <a href="@Url.SectionUrl(Model.Section, new {tag=tag })" class="tag article"><i class="fa fa-caret-right"></i> @tag </a>
+                                        }
+                                    }
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top:10px; width:100px">
+                                    <div class="s3 mdGrey">
+                                        <b> <i class="fa fa-share-alt"></i> Social:</b>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="social-likes">
+
+
+                                        <div class="facebook" title="Compartir enlace en Facebook">Facebook</div>
+                                        <div class="twitter" title="Compartir enlace enn Twitter">Twitter</div>
+                                        <div class="plusone" title="Compartir enlace en Google+">Google+</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+
+</div>
+
+
+            <div style="clear: both;"></div>
+            <hr class="bb3 mvl size98of98">
+
+            <div class="section">
+
+
+
+
+
+                <!-- relacionados -->
+                <div class="rich-text parbase section">
+                    <div class="left">
+                        <h2 class="s3 pc-brand s3-b">
+                            <i class="fa fa-newspaper-o"></i>  Noticias Relacionadas:
+                        </h2>
+                    </div>
+                    <div class="right">
+                        <p>
+
+                            <a href="@Url.SectionUrl(Model.Section)" class="adsk-cta s5 phm">Más noticias...<span class="cta-arrow"></span></a>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <hr class="bb3 mvl size98of98">
+                    <div class="bim-solutions">
+
+                        @foreach (var item in latest.Where(i => i.ContentId != Model.ContentId).OrderByDescending(order).Take(3))
+                        {
+
+
+                            <div class="parsys_column adskcol-08">
+                                <div class="parsys_column adskcol-08-c0">
+                                    <div class="rich-text parbase section">
+
+                                        <p>
+                                            <a class="  noDecor" href="@Url.ContentUrl(item)">
+                                                
+                                            <img alt="@item.Title" style="margin-right: 12px;" src="@Url.ContentImage(item, 252, 150, true)">
+                                               <!--
+                                                <img alt="@item.Title" style="margin-right: 12px;" src="http://jazani.ddns.net:90/CmsContents/Images/titulo-2-noticia-home-30.crop252x150.jpg">
+ -->
+                                            </a>
+                                        </p>
+
+
+                                    </div>
+                                </div><div class="parsys_column adskcol-08-c1">
+                                    <div class="section-header parbase section">
+
+                                        <h4 class="s4-b mdGrey">
+                                            @item.Title
+                                        </h4>
+                                    </div>
+                                    <div class="rich-text parbase section">
+
+                                        <p><b><i class="fa fa-calendar"></i> @(item.Created.ToString("dd/MM/yyyy"))</b><br /> @item.Description</p>
+                                        <p><a href="@Url.ContentUrl(item)" class="adsk-cta s5 phm">Ver Detalle<span class="cta-arrow"></span></a></p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="bb3 mvl size98of98">
+
+                        }
+
+
+
+
+                        <div style="clear: both;"></div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col adsk-pNav colright">
+            <div class="br5 bb4 set-rel pa-1-0 estore-config-head" style="background-color: #c8dac2" id="mf185">
+                <h2 class="h2head"><i class="fa fa-bars"></i> Categorías:</h2>
+
+            </div>
+
+            <nav class="leftNavigation marginb" data-wat-link-section="leftnav">
+
+
+                <ul>
+                    @foreach (var cat in Model.Section.GetCategories())
+                    {
+                        <li><a class=" noDecor s4 lh19" href="@Url.SectionUrl(Model.Section, new {cat=cat })"><i class="fa fa-angle-right"></i> @cat</a></li>
+                    }
+
+                </ul>
+            </nav>
+
+
+
+
+
+
+           <div class="br5 bb4 set-rel pa-1-0 estore-config-head" style="background-color: #c8dac2" id="mf185">
+                <h2 class="h2head">
+                    <i class="fa fa-newspaper-o"></i>  Últimas Noticias:
+                </h2>
+               </div>
+
+
+                @foreach (var item in latest.Take(5))
+                {
+
+                    <div class="parsys_column ">
+                        <div class="parsys_column ">
+                            <div class="rich-text parbase section">
+
+                                <div class="section-header parbase section">
+
+                                    <h4 class="s4-b mdGrey">
+                                        <a class="  noDecor" href="@Url.ContentUrl(item)">   @item.Title</a>
+                                    </h4>
+                                </div>
+
+
+                                <a href="@Url.ContentUrl(item)" style="border:0px; margin-bottom:10px;">
+                                    
+                                <img alt="@item.Title" style="margin-right: 12px;" src="@Url.ContentImage(item, 310, 186, true)">
+                                <!--
+                                    <img alt="@item.Title" style="margin-right: 12px; width:310px; height:186px;" src="http://jazani.ddns.net:90/CmsContents/Images/titulo-2-noticia-home-30.crop252x150.jpg">
+-->
+                                </a>
+                                <div class="rich-text parbase section">
+
+                                    <p><b><i class="fa fa-calendar"></i> @(item.Created.ToString("dd/MM/yyyy"))</b>
+
+
+
+                                </div>
+
+                                <p><a href="@Url.ContentUrl(item)" class="adsk-cta s5 phm">Ver Detalle<span class="cta-arrow"></span></a></p>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="bb3 mvl size98of98">
+
+
+                }
+
+
+
+            <aside id="twitter">
+
+                <div class="br5 bb4 set-rel pa-1-0 estore-config-head" style="background-color: #c8dac2" id="mf185">
+                    <h2 class="h2head"><i class="fa fa-share-alt"></i> Social:</h2>
+                  </div>
+
+                    <a class="twitter-timeline" href="https://twitter.com/JazaniConsultor" data-widget-id="559808847200923648">Tweets por el @@JazaniConsultor.</a>
+                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+            </aside>
+                <aside id="facebook">
+                    <div id="blockfacebook">
+                        <br />
+                        <div class="br5 bb4 set-rel pa-1-0 estore-config-head" style="background-color: #c8dac2" id="mf185">
+                            <h2 class="h2head"><i class="fa fa-facebook-official"></i> Facebook:</h2>
+                            </div>
+
+                            <div class="fb-like-box" data-href="https://www.facebook.com/pages/Jazani-Consultora-Ambiental/1428199100805359" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+
+                            <div id="fb-root"></div>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+
+                        </div>
+</aside>
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>    
+
+
+
+<div style=" width:100%; padding-bottom:60px;">
+
+</div>
+
+    @section PageScriptSection{
+    }

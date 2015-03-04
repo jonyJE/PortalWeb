@@ -1,0 +1,64 @@
+﻿@model IEnumerable<AecFramework.Cms.Mvc.Models.MenuModel>
+@{
+    var path = Request.Path;
+}
+@{
+    ViewBag.Title = "GeoServidor | SiteMap ";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<div class="section main">
+    <div>
+        <div class="adsk-breadcrumb breadcrumb">
+
+            <div class="section adsk-breadcrumb container setPos">
+                <ul class="adsk-inlineList">
+
+
+
+
+
+                    <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+                                          
+                    <li class="activo">Mapa del Sitio</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="banner">
+            <div class="section adsk-static-banner adsk-authorBG expand"
+                 style="height: 60px;
+">
+                <div class="grid adsk-industry-banner-image">
+                    <div class="parbase adsk-image image">
+
+                        <h1 class="s0 allCaps dkGrey"> <b>Mapa del Sitio</b></h1>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="container content">
+        <div class="col adsk-content size98of98">
+            <div class="section">
+                @Html.Partial("Partialsm", AecFramework.Cms.Mvc.Models.MenuModel.MainMenu)
+
+
+
+
+                
+               
+            </div>
+            </div>
+        </div>
+    </div>
+<div style=" width:100%; padding-bottom:60px;">
+
+</div>
+

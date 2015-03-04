@@ -1,0 +1,47 @@
+﻿.btnPrimero
+{
+    background: url("../../images/primero.png") no-repeat scroll 0 0 transparent !important;
+    border: medium none !important;
+    cursor: pointer !important;
+    height: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    /*text-indent: -9999em !important;*/
+    width: 26px !important;
+}
+
+.btnAtras
+{
+    background: url("../../images/atras.png") no-repeat scroll 0 0 transparent !important;
+    border: medium none !important;
+    cursor: pointer !important;
+    height: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    /*text-indent: -9999em !important;*/
+    width: 22px !important;
+}
+
+.btnAdelante
+{
+    background: url("../../images/adelante.png") no-repeat scroll 0 0 transparent !important;
+    border: medium none !important;
+    cursor: pointer !important;
+    height: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    /*text-indent: -9999em !important;*/
+    width: 22px !important;
+}
+
+.btnUltimo
+{
+    background: url("../../images/ultimo.png") no-repeat scroll 0 0 transparent !important;
+    border: medium none !important;
+    cursor: pointer !important;
+    height: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    /*text-indent: -9999em !important;*/
+    width: 26px !important;
+}

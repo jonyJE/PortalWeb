@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "GeoServidor | Servicios WMS, WFS y WCS";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+
+
+<div id="cuerpo">
+    <div id="serviciosmapa">
+        <ol class="rastro">
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+            <li><a href="@Url.Action("Index", "GeoServicio")">Geoservicios y Recursos IDE</a></li>
+
+            <li class="activo">Servicios WMS, WFS y WCS</li>
+
+        </ol>
+
+        <div class="subcontenedor">
+
+            <div class="col-md-12">
+
+                <h1>Servicios WMS, WFS y WCS</h1>
+                <p>
+
+                    El MINAM utiliza estándares abiertos e interoperables dentro de los Sistemas de Información Geográfica y de la World Wide Web, las mismas que están definidas por el Open Geospatial Consortium (OGC); con el fin de que posibilitar la interoperación entre sistemas de geoprocesamiento y facilitar el intercambio de la información geográfica en beneficio de los usuarios.
+                </p>
+
+                <p>
+
+                    <img src="/resources/images/thumbnails/servicios1.png" />
+
+                </p>
+
+                <p>
+
+                    El servicio WMS permite, mediante el intercambio de peticiones y respuestas XML, publicar mapas a solicitud del usuario a partir de datos geo referenciados, sin necesidad de que se acceda a los datos en sí mismos, sólo a una representación gráfica de ellos. Estos mapas pueden contener información de varias capas de tipo vector y/o raster, superpuestas en un determinado orden que puede ser modificable.
+                </p>
+                <p></p> el servicio wfs de entidades ofrece acceso de lectura a datos vectoriales utilizando gml como protocolo subyacente para realizar consultas espaciales, recuperar los datos y manipular la geometría. los servicios wfs permiten poder acceder y consultar todos los atributos de un fenómeno u entidad (feature) geográfico como un río, una calle o un lago, representado en modo vectorial, con una geometría descrita por un conjunto de coordenadas.</p>
+                <p> el servicio wcs de coberturas proporciona información raster con su semántica original. es decir, permite el acceso no sólo a la imagen en sí (tal y como hace el servicio wms), sino también a los valores o propiedades de la misma (por ejemplo, a los valores de altitud de un modelo digital de elevaciones u otra información de ese tipo). este servicio permite la obtención de datos geoespaciales en forma de “coberturas”, es decir, información geográfica espacial digital que representa fenómenos de variación espacial (distribución continua), de modo que sean útiles para la representación o como dato de entrada de modelos científicos.</p>
+                <p>
+
+                    <img src="/resources/images/thumbnails/servicios2.png" />
+
+                </p>
+
+                <p>
+
+                    <div class="limpiar">
+                        <a class="btn" id="btnenviar">
+                            Ir a Servicios de mapa
+                        </a>
+                    </div>
+                </p>
+                <div class="limpiar"></div>
+                <div class="espaciobottom"></div>
+            </div>
+
+        </div>
+
+        <div class="limpiar"></div>
+    </div>
+</div>
+@section PageScriptSection{
+
+}
+

@@ -1,0 +1,81 @@
+﻿<div id="signup-box" class="signup-box widget-box no-border">
+    <div class="widget-body">
+        <div class="widget-main">
+            <h4 class="header green lighter bigger">
+                <i class="icon-group blue"></i>
+                Registro de usuarios
+            </h4>
+
+            <div class="space-6"></div>
+            <p> Ingresa tus datos: </p>
+
+            <form id="register-form">
+                <fieldset>
+                    <label>
+                        <span class="block input-icon input-icon-right">
+                            <input type="text" class="span12" placeholder="Nombres" id="reg-firstnameBox" name="firstname" />
+                            <i class="icon-envelope"></i>
+                        </span>
+                    </label>
+
+                    <label>
+                        <span class="block input-icon input-icon-right">
+                            <input type="text" class="span12" placeholder="Apellidos" id="reg-lastnameBox" name="lastname" />
+                            <i class="icon-envelope"></i>
+                        </span>
+                    </label>
+
+                    <label>
+                        <span class="block input-icon input-icon-right">
+                            <input type="email" class="span12" placeholder="E-mail" id="reg-emailBox" name="email" />
+                            <i class="icon-envelope"></i>
+                        </span>
+                    </label>
+
+                    <label>
+                        <span class="block input-icon input-icon-right">
+                            <input type="password" class="span12" placeholder="Contraseña" id="reg-pwdBox" name="pwd" />
+                            <i class="icon-lock"></i>
+                        </span>
+                    </label>
+
+                    <label>
+                        <span class="block input-icon input-icon-right">
+                            <input type="password" class="span12" placeholder="Repetir contraseña" name="rePwd" />
+                            <i class="icon-retweet"></i>
+                        </span>
+                    </label>
+
+                    @*<label>
+                    <input type="checkbox" />
+                    <span class="lbl">
+                        I accept the
+                        <a href="#">User Agreement</a>
+                    </span>
+                </label>*@
+
+                    <div class="space-24"></div>
+
+                    <div class="clearfix">
+                        <button type="reset" class="width-30 pull-left btn btn-small">
+                            <i class="icon-refresh"></i>
+                            Limpiar
+                        </button>
+
+                        <button onclick="return false;" class="width-65 pull-right btn btn-small btn-success start-disabled" id="registerBtn" disabled="disabled">
+                            Registrar
+                            <i class="icon-arrow-right icon-on-right"></i>
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="toolbar center">
+            <a href="#" onclick="show_box('login-box'); return false;" class="back-to-login-link">
+                <i class="icon-arrow-left"></i>
+                Volver al inicio
+            </a>
+        </div>
+    </div><!--/widget-body-->
+</div><!--/signup-box-->

@@ -1,0 +1,307 @@
+﻿.btnBuscar, .btnExportar, .btnExportar2, .btnImportar, .btnRegistrar, .btnDetalle, .btnModificar, .btnEliminar, .btnGuardar, .btnMapa, .btnAceptar, .btnCancelar, .btnLimpiar, .btnReporte, .btnCargar, .btnAgregar, .btnQuitar, .btnAsignar, .btnEditar, .btnAtender, .btnTupa, .btnBuscar2, .btnExcel, .btnPDF, .btnResumen, .btnDato, .btnLogin, .btnImprimir, .btnPrimero, .btnAnterior, .btnSiguiente, .btnUltimo, .btnExpediente, .btnAgregarImagen, .btnQuitarImagen, .btnInicio, .btnAyuda, .btnCambiarContrasenia, .btnCerrarSesion, .btnFormulario, .btnHojaCalculo, .btnShapeFile, .btnHojaTexto, .btnVerMapa, .btnVerGoogleMap, .btnVerGoogleEarth, .btnLogin, .btnVisor, .btnGuardar1, .btnVerFormato, .btnExportarHojaCalculo {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0px solid #FFFFFF;
+    cursor: pointer;
+    height: 21px;
+    width: 85px;
+    padding: 0px;
+    vertical-align: middle;
+    display: inline-block;
+    text-indent: -9999px;
+    color: rgba(0,0,0,0);
+    color: transparent;
+    font-size: 0%;
+    color: Background;
+    line-height: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none; /* margin: 0 !important;     padding: 0 !important;     cursor: pointer !important;     cursor: hand !important;     width: 85px !important;     height: 25px !important;     border:0px;     /*text-indent: -999px;     border-left-style: none !important;     border-left-color: inherit !important;     border-left-width: medium;     border-right-style: none !important;     border-right-color: inherit !important;     border-right-width: medium;     border-top-style: none !important;     border-top-color: inherit !important;     border-top-width: medium;     border-bottom-style: none !important;     border-bottom-color: inherit !important;     border-bottom-width: medium;     font-size: 0;*/ /* display: inline;*/
+}
+
+.btnAgregar {
+    background: url(../../images/icono/agregar.gif) no-repeat !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.btnQuitar {
+    background: url(../../images/icono/quitar.gif) no-repeat !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.btnAsignar {
+    background: url(../../images/icono/asignar.gif) no-repeat !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.btnEditar {
+    background: url(../../images/icono/editar.gif) no-repeat !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.btnGuardar1 {
+    background: url(../../images/icono/guardar.png) no-repeat !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.btnAtender {
+    background: url(../../images/icono/atender.gif) no-repeat !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.btnTupa {
+    background: url(../../images/icono/Tupa.gif) no-repeat !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.btnDato {
+    background: url(../../images/verdatos.png) no-repeat !important;
+}
+
+.btnExportarHojaCalculo {
+    background: url(../../images/ExportarXLS.png) no-repeat !important;
+}
+
+.btnImportar {
+    background: url(../../images/Importar.png) no-repeat !important;
+}
+
+.btnPDF {
+    background: url(../../images/ExportarPDF.png) no-repeat !important;
+}
+
+.btnSHP {
+    background: url(../../images/exportarshp.png) no-repeat !important;
+}
+
+.btnResumen {
+    background: url(../../images/ico_resumen.png) no-repeat !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.btnReporte {
+    background: url(../../images/reporte.png) no-repeat !important;
+}
+
+.btnCargar {
+    background: url(../../images/cargar.png) no-repeat !important;
+    width: 109px !important;
+    height: 22px !important;
+}
+
+
+
+.btnAceptar {
+    background: url(../../images/Aceptar.png) no-repeat !important;
+    width: 85px !important;
+    height: 30px !important;
+}
+
+.btnCancelar {
+    background: url(../../images/cancelar.png) no-repeat !important;
+}
+
+.btnDetalle {
+    width: 99px !important;
+}
+
+.btnLimpiar {
+    background: url(../../images/Limpiar.png) no-repeat !important;
+}
+
+.btnGuardar {
+    background: url(../../images/guardar.png) no-repeat !important;
+}
+
+.btnRegistrar {
+    background: transparent url(../../images/Registrar.png) no-repeat center top;
+}
+
+.btnModificar {
+    background: url(../../images/modificar.png) no-repeat !important;
+}
+
+.btnEliminar {
+    background: url(../../images/eliminar.png) no-repeat !important;
+}
+
+.btnBuscar {
+    background: url(../../images/buscar.png) no-repeat !important;
+}
+
+.btnBuscar2 {
+    background: url(../../images/buscar.gif) no-repeat !important;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.btnImprimir {
+    background: url(../../images/imprimir.png) no-repeat !important;
+    width: 85px !important;
+    height: 21px !important;
+}
+
+.btnPrimero {
+    background: url(../../images/primero.png) no-repeat !important;
+    width: 26px !important;
+    height: 21px !important;
+}
+
+.btnAnterior {
+    background: url(../../images/anterior.png) no-repeat !important;
+    width: 22px !important;
+    height: 21px !important;
+}
+
+.btnSiguiente {
+    background: url(../../images/siguiente.png) no-repeat !important;
+    width: 22px !important;
+    height: 21px !important;
+}
+
+.btnUltimo {
+    background: url(../../images/ultimo.png) no-repeat !important;
+    width: 26px !important;
+    height: 21px !important;
+}
+
+.btnExpediente {
+    background: url(../../images/verexpediente.png) no-repeat !important;
+    width: 109px !important;
+    height: 21px !important;
+}
+
+.btnAgregarImagen {
+    background: url(../../images/agregarimagen.png) no-repeat !important;
+}
+
+.btnQuitarImagen {
+    background: url(../../images/quitarimagen.png) no-repeat !important;
+}
+
+.btnVisor {
+    background: url(../../images/visor.gif) no-repeat !important;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.btnInicio {
+    background: url(../../images/inicio.png) no-repeat !important;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.btnAyuda {
+    background: url(../../images/ayuda.png) no-repeat !important;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.btnCambiarContrasenia {
+    background: url(../../images/cambiarcontrasenia.png) no-repeat !important;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.btnCerrarSesion {
+    background: url(../../images/cerrarsesion.png) no-repeat !important;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.btnFormulario {
+    background: url(../../images/formulario.png) no-repeat !important;
+    width: 92px !important;
+}
+
+.btnHojaCalculo {
+    background: url(../../images/icono/hojacalculo.gif) no-repeat !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.btnShapeFile {
+    background: url(../../images/icono/shapefile.gif) no-repeat !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.btnHojaTexto {
+    background: url(../../images/icono/hojatexto.gif) no-repeat !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.btnVerMapa {
+    background: url(../../images/vermapa.png) no-repeat !important;
+    width: 21px !important;
+    height: 21px !important;
+}
+
+.btnVerGoogleMap {
+    background: url(../../images/vergooglemap.png) no-repeat !important;
+    width: 21px !important;
+    height: 21px !important;
+}
+
+.btnVerGoogleEarth {
+    background: url(../../images/vergoogleearth.png) no-repeat !important;
+    width: 21px !important;
+    height: 21px !important;
+}
+
+.btnVerFormato {
+    background: url(../../images/verformato.png) no-repeat !important;
+    width: 109px !important;
+    height: 22px !important;
+}
+
+.btnLogin {
+    background-color: #767676;
+    font-size: 12px;
+    color: #FFF;
+    width: 230px !important;
+    height: 25px !important;
+    padding: 5px !important;
+    text-indent: 0px;
+}
+
+/*.CoolButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:10px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+}.CoolButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}.CoolButton:active {
+	position:relative;
+	top:1px;
+}*/

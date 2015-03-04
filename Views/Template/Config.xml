@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+  <template>
+    <title>Contenido por defecto</title>
+    <type>Content</type>
+    <view>~/Views/Template/content-default.cshtml</view>
+  </template>
+  <template>
+    <title>Lista de noticias</title>
+    <type>List</type>
+    <view>~/Views/Template/list-news.cshtml</view>
+  </template>
+  <template>
+    <title>Contenido de noticias</title>
+    <type>Content</type>
+    <view>~/Views/Template/content-news.cshtml</view>
+  </template>
+  <template>
+    <title>Slider de noticias</title>
+    <type>Widget</type>
+    <view>~/Views/Template/widget-news.cshtml</view>
+  </template>
+
+
+</templates>

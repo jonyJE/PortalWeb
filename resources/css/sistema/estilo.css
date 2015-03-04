@@ -1,0 +1,464 @@
+﻿a {
+    text-decoration: none;
+}
+
+    a:link {
+        /*color: red;*/
+        color: gray;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: gray;
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: none;
+        color: Green;
+    }
+
+    a:hover {
+        color: red;
+        /*background-color: #878C89;*/
+    }
+
+img {
+    border: 0px;
+}
+
+.iconos img {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.imagen150 {
+    width: 150px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+}
+
+.mostrar {
+    display: block;
+}
+
+.ocultar {
+    display: none;
+}
+
+.izquierda {
+    float: left !important;
+    position: relative;
+    margin: 1px;
+    padding: 1px;
+}
+
+.derecha {
+    float: right !important;
+    position: relative;
+    /*clear: both !important;*/
+}
+
+.centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    padding: 3px;
+}
+
+.nuevaLinea {
+    clear: both;
+}
+
+.opciones {
+    float: right;
+}
+
+.total {
+    float: right;
+    font-weight: bold;
+    clear: both;
+}
+
+fieldset {
+    /* float: left;*/
+    padding: 1px !important;
+    margin: 0.5px;
+    /**width: 99%;*/
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid #A6C9E2;
+    /*border:0;
+    outline: 1px solid gray;*/
+}
+/*legend
+{
+    font-weight: bold;
+    background: orange;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}*/
+label {
+    margin-right: 0.5em;
+    padding-top: 0.2em;
+    text-align: justify;
+    font-weight: bold;
+}
+
+a {
+    border: 0px;
+}
+
+header, footer, section, article, aside, hgroup {
+    display: block;
+}
+
+.cargando {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url(../../images/cargando.gif) no-repeat center;
+    background-color: #C1CDCD !important;
+}
+/******************************* overflows*********************/
+.scroll20, .scroll50, .scroll70, .scroll80, .scroll100, .scroll110, .scroll150, .scroll200, .scroll250, .scroll300, .scroll350, .scroll360,.scroll400, .scroll450, .scrollPorcentaje100 {
+    clear: both;
+    overflow: scroll;
+    border: solid 1px #A6C9E2;
+}
+
+.scroll20 {
+    height: 20px;
+}
+
+.scroll50 {
+    height: 50px;
+}
+
+.scroll70 {
+    height: 70px;
+}
+
+.scroll80 {
+    height: 80px;
+}
+
+.scroll100 {
+    height: 100px;
+}
+
+.scroll110 {
+    height: 110px;
+}
+
+.scroll150 {
+    height: 150px;
+}
+
+.scroll200 {
+    height: 200px;
+}
+
+.scroll250 {
+    height: 250px;
+}
+
+.scroll300 {
+    height: 300px;
+}
+.scroll350 {
+    height: 350px;
+}
+.scroll360 {
+    height: 360px;
+}
+
+.scroll400 {
+    height: 400px;
+}
+
+.scroll450 {
+    height: 450px;
+}
+
+.scrollPorcentaje100 {
+    height: 100%;
+}
+/************borders*/
+.bordeCircular {
+    border: 1px #979797 solid;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url("htc/border-radius.htc");
+    margin: 10px 0 10px 0;
+    padding: 3px;
+    overflow: auto;
+}
+/********campos************/
+p {
+    clear: both;
+}
+
+    p label {
+        width: 25%;
+        float: left; /*text-align: justify;*/
+        padding: 0 2px 0 0;
+        font-weight: bold;
+    }
+
+object:hover {
+    border: 0px solid;
+}
+
+.colorFormulario {
+    background-color: #EEEEEE;
+    border-width: 0;
+    border-style: none;
+    border-color: #EEEEEE;
+}
+
+.cabeceraDato {
+    font-weight: bold;
+    text-align: center;
+}
+
+.errorDato {
+    background-color: Red;
+    font-weight: bold;
+}
+
+.seleccionDato {
+    background-color: Silver;
+}
+
+.valor {
+    text-align: right;
+}
+
+label.error {
+    margin-top: -0.5px;
+    width: auto;
+    display: inline;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: red;
+}
+
+fieldset legend {
+    font: bold 16px;
+    font-weight: bold; /**  border: 1px solid #000;**/
+    padding: 1px 1px;
+    vertical-align: middle;
+}
+
+.ancho15 {
+    width: 15px !important;
+}
+
+.ancho20 {
+    width: 20px !important;
+}
+
+.ancho30 {
+    width: 30px !important;
+}
+
+.ancho50 {
+    width: 50px !important;
+}
+
+.ancho60 {
+    width: 60px !important;
+}
+
+.ancho70 {
+    width: 70px !important;
+}
+
+.ancho80 {
+    width: 80px !important;
+}
+
+.ancho90 {
+    width: 90px !important;
+}
+
+.ancho100 {
+    width: 100px !important;
+}
+
+.ancho110 {
+    width: 110px !important;
+}
+
+.ancho120 {
+    width: 120px !important;
+}
+
+.ancho130 {
+    width: 130px !important;
+}
+
+.ancho140 {
+    width: 140px !important;
+}
+
+.ancho150 {
+    width: 150px !important;
+}
+
+.ancho155 {
+    width: 155px !important;
+}
+
+.ancho160 {
+    width: 160px !important;
+}
+
+.ancho180 {
+    width: 180px !important;
+}
+
+.ancho190 {
+    width: 190px !important;
+}
+
+.ancho200 {
+    width: 200px !important;
+}
+
+.ancho210 {
+    width: 210px !important;
+}
+
+.ancho220 {
+    width: 220px !important;
+}
+
+.ancho230 {
+    width: 230px !important;
+}
+
+.ancho250 {
+    width: 250px !important;
+}
+
+.ancho260 {
+    width: 260px !important;
+}
+
+.ancho270 {
+    width: 270px !important;
+}
+
+.ancho285 {
+    width: 285px !important;
+}
+
+.ancho295 {
+    width: 295px !important;
+}
+
+.ancho300 {
+    width: 300px !important;
+}
+
+.ancho315 {
+    width: 315px !important;
+}
+
+.ancho320 {
+    width: 320px !important;
+}
+
+.ancho350 {
+    width: 350px !important;
+}
+
+.ancho370 {
+    width: 370px !important;
+}
+
+.ancho400 {
+    width: 400px !important;
+}
+.ancho445 {
+    width: 445px !important;
+}
+.ancho450 {
+    width: 450px !important;
+}
+.ancho500 {
+    width: 500px !important;
+}
+
+.ancho525 {
+    width: 525px !important;
+}
+
+.ancho600 {
+    width: 600px !important;
+}
+
+.ancho650 {
+    width: 650px !important;
+}
+
+.ancho700 {
+    width: 700px !important;
+}
+
+.ancho770 {
+    width: 770px !important;
+}
+
+.ancho800 {
+    width: 800px !important;
+}
+
+.checked {
+    outline-color: red;
+    outline-style: solid;
+    outline-width: thin;
+}
+
+.unchecked {
+    background: #000000;
+}
+
+.tdAtendido {
+    background-color: #FA5858;
+    font-weight: bold;
+}
+
+.divImagen {
+    height: 165px;
+    width: 130px;
+}
+
+.imgImagen {
+    width: 100%;
+    height: 100%;
+}
+
+
+#embed {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    frame-border: 0px;
+}

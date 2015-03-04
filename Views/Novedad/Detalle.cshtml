@@ -1,0 +1,274 @@
+﻿@{
+    ViewBag.Title = "GeoServidor | Noticia";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+@section HeaderSection{
+    
+
+<script src="~/resources/js/social-likes.min.js"></script>
+
+
+
+}
+
+
+
+<div id="cuerpo">
+    <div id="enlace">
+        <ol class="rastro">
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+            <li><a href="@Url.Action("Noticia", "Novedad")">Noticias</a></li>
+
+            <li class="activo">  Estado se compromete a entregar título a Saweto</li>
+
+</ol>
+
+        <div class="subcontenedor">
+
+       
+
+             
+                <section id="noticias">
+                  
+                        <h1> Estado se compromete a entregar título a Saweto</h1>
+
+                        <div class="col-md-8">
+                            <section>
+                                <div class="contenedorimagen">
+
+                                    <img src="@Url.Content("~/resources/images/thumbnails/noticiagrande.jpg")" />
+                                </div>
+
+                                <figure class="meta">
+                                   
+                                    <div class="izquierda"><i class="fa fa-calendar"></i><b>06/04/2014</b></div>
+                                    <div class="tags">
+                                        <a href="#" class="tag article">Tag 1</a>
+                                        <a href="#" class="tag article">Tag 2</a>
+                                        <a href="#" class="tag article">Tag 3</a>
+                                    </div>
+                                </figure>
+
+                                
+                                <p>
+                                    Fusce quis nulla volutpat, rhoncus ligula ut, pulvinar nisi. In dapibus urna sit amet accumsan
+                                    tristique. Donec odio ligula, luctus venenatis varius id, tincidunt ac ipsum. Cras commodo,
+                                    velit nec aliquam dictum, tortor velit dictum ipsum, sed ornare nunc leo nec ipsum. Vestibulum
+                                    sagittis sapien vitae tristique mollis. Aliquam hendrerit nulla semper, viverra mi et,
+                                    hendrerit mauris. Maecenas hendrerit congue ultrices. In laoreet erat blandit eros aliquet,
+                                    in malesuada sem rutrum. In placerat porta egestas.
+                                </p>
+                                 
+                                <p>
+                                    <hr />
+                                    <div class="social-likes">
+                                        <div class="facebook" title="Compartir enlace en Facebook">Facebook</div>
+                                        <div class="twitter" title="Compartir enlace enn Twitter">Twitter</div>
+                                        <div class="plusone" title="Compartir enlace en Google+">Google+</div>
+                                     
+                                    </div>
+
+                                </p>
+                            </section>
+
+                            <section id="noticiasrelacionadas">
+
+                                <header><h3>Noticias Relacionadas</h3></header>
+
+                                <!-- inicio item -->
+                                <div class="col-md-4">
+                                    <div class="miniaturas">
+                                        <a href="@Url.Action("Detalle")/1">
+                                            <div class="imagen">
+                                                <img alt="" src="@Url.Content("~/resources/images/thumbnails/4.jpg")">
+                                            </div>
+                                            <div class="capa">
+                                                <div class="informacion">
+                                                    <div class="etiqueta nombre">
+                                                        <h5>Vestibulum sagittis sapien vitae tristique mollis...</h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="lista">
+                                                    <li><i class="fa fa-calendar "></i> 12-13-2014</i></li>
+
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <!-- inicio item -->
+                                <div class="col-md-4">
+                                    <div class="miniaturas">
+                                        <a href="@Url.Action("Detalle")/1">
+                                            <div class="imagen">
+                                                <img alt="" src="@Url.Content("~/resources/images/thumbnails/2.jpg")">
+                                            </div>
+                                            <div class="capa">
+                                                <div class="informacion">
+                                                    <div class="etiqueta nombre">
+                                                        <h5>Vestibulum sagittis sapien vitae tristique mollis...</h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="lista">
+                                                    <li><i class="fa fa-calendar "></i> 12-13-2014</i></li>
+
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- fin item -->
+
+
+
+                                <!-- inicio item -->
+                                <div class="col-md-4">
+                                    <div class="miniaturas">
+                                        <a href="@Url.Action("Detalle")/1">
+                                            <div class="imagen">
+                                                <img alt="" src="@Url.Content("~/resources/images/thumbnails/1.jpg")">
+                                            </div>
+                                            <div class="capa">
+                                                <div class="informacion">
+                                                    <div class="etiqueta nombre">
+                                                        <h5>Vestibulum sagittis sapien vitae tristique mollis...</h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="lista">
+                                                    <li><i class="fa fa-calendar "></i> 12-13-2014</i></li>
+
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- fin item -->
+
+                                <!-- fin item -->
+
+
+                                </section>
+</div>
+
+                        <div class="col-md-4">
+                            <section id="barralateral">
+
+                                <aside id="otrasnoticias">
+                                    <header><h3>Últimas Noticias</h3></header>
+<!-- item 1-->
+                                    <div class="miniatura small">
+                                        <a href="">
+                                            <div class="miniatura-image">
+                                                <img alt="" src="@Url.Content("~/resources/images/thumbnails/1.jpg")">
+                                            </div>
+                                        </a>
+                                        <div class="info">
+                                            <a href=""><h4>Fusce quis nulla volutpat, rhoncus ligula ut, pulvinar nisi</h4></a>
+                                            <div class="fecha"><i class="fa iconocalendario"> </i> 06/04/2014 </div>
+                                            
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- item 2-->
+
+                                    <div class="miniatura small">
+                                        <a href="">
+                                            <div class="miniatura-image">
+                                                <img alt="" src="@Url.Content("~/resources/images/thumbnails/2.jpg")">
+                                            </div>
+                                        </a>
+                                        <div class="info">
+                                            <a href=""><h4>Fusce quis nulla volutpat, rhoncus ligula ut, pulvinar nisi</h4></a>
+                                            <div class="fecha"><i class="fa iconocalendario"> </i> 06/04/2014 </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <!-- item 3-->
+
+                                    <div class="miniatura small">
+                                        <a href="">
+                                            <div class="miniatura-image">
+                                                <img alt="" src="@Url.Content("~/resources/images/thumbnails/3.jpg")">
+                                            </div>
+                                        </a>
+                                        <div class="info">
+                                            <a href=""><h4>Fusce quis nulla volutpat, rhoncus ligula ut, pulvinar nisi</h4></a>
+                                            <div class="fecha"><i class="fa iconocalendario"> </i> 06/04/2014 </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- item 4-->
+
+                                    <div class="miniatura small">
+                                        <a href="">
+                                            <div class="miniatura-image">
+                                                <img alt="" src="@Url.Content("~/resources/images/thumbnails/4.jpg")">
+                                            </div>
+                                        </a>
+                                        <div class="info">
+                                            <a href=""><h4>Fusce quis nulla volutpat, rhoncus ligula ut, pulvinar nisi</h4></a>
+                                            <div class="fecha"><i class="fa iconocalendario"> </i> 06/04/2014 </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- item 5-->
+
+                                    <div class="miniatura small">
+                                        <a href="">
+                                            <div class="miniatura-image">
+                                                <img alt="" src="@Url.Content("~/resources/images/thumbnails/5.jpg")">
+                                            </div>
+                                        </a>
+                                        <div class="info">
+                                            <a href=""><h4>Fusce quis nulla volutpat, rhoncus ligula ut, pulvinar nisi</h4></a>
+                                            <div class="fecha"><i class="fa iconocalendario"> </i> 06/04/2014 </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                     
+                                        <div class="derecha">
+                                           
+                                            <a href="@Url.Action("Noticia")"> <i class="fa fa-chevron-right"></i> Más Noticias...</a>
+                                        </div>
+                                        <div class="limpiar">
+                                        </div>
+                                    </div>
+</aside>
+
+
+                                <aside id="categories">
+                                    <header><h3>Categorías</h3></header>
+                                    <ul class="list-links">
+                                        <li><a href="#">Architecture</a></li>
+                                        <li><a href="#">Apartments</a></li>
+                                        <li><a href="#">Design</a></li>
+                                        <li><a href="#">Do it yourself</a></li>
+                                        <li><a href="#">Housing</a></li>
+                                        <li><a href="#">Interior</a></li>
+                                        <li><a href="#">Trends</a></li>
+                                    </ul>
+                                </aside>
+
+                            </section>
+                        </div>
+
+
+                        <div class="limpiar"></div>
+                        <div class="espaciobottom"></div>
+                 
+
+            
+
+</div>
+@section PageScriptSection{
+
+}

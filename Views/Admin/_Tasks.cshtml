@@ -1,0 +1,26 @@
+﻿@{
+    var tareas = System.JCA.Web.Behavior.JCABootstrapper.Instance.Tasks;
+    var count = tareas.Count();
+}
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon-tasks"></i>
+    <span class="badge badge-grey">@count</span> </a>
+<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-closer">
+    <li class="nav-header"><i class="icon-ok"></i>@(count == 0 ? "No hay tareas" : string.Format("{0} tareas pendientes", count))
+    </li>
+    @foreach (var tasks in tareas)
+    {
+        <li><a href="#">
+            <div class="clearfix">
+                <span class="pull-left">Software Update</span> <span class="pull-right">65%</span>
+            </div>
+            <div class="progress progress-mini ">
+                <div style="width: 65%" class="bar">
+                </div>
+            </div>
+        </a></li>
+    }
+    @if (count > 0)
+    {
+        <li><a href="#">See tasks with details <i class="icon-arrow-right"></i></a></li>
+    }
+</ul>

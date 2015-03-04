@@ -1,0 +1,30 @@
+﻿@model AecFramework.Cms.Section
+@{
+    var items = AecFramework.Cms.Content.GetList(AecFramework.Cms.ListMode.Recent, Model.SectionId.Value, null, AecFramework.Cms.ContentStatus.Active, 1, 5);
+
+}
+
+
+@foreach (var item in items)
+{
+    <div id="homepage-module-1-geo" class="campaign campaign-teaserstylescampaign">
+        <div class="rich-text parbase section">
+            <div class="resourcecontainer">
+
+                <a href="@Url.ContentUrl(item)" class="noDecor">
+                    <img alt="@item.Title" src="@Url.ContentImage(item, 300, 110, true)" />
+                    <!--
+                    <img alt="@item.Title" src="http://static-dc.autodesk.net/content/dam/autodesk/www/homepage/images/industries-thumb-300x110.jpg">
+                       --> 
+                </a>
+                <h4>
+                    <a href="@Url.ContentUrl(item)">@item.Title</a>
+                </h4>
+                <p>@item.Description</p>
+
+            </div>
+        </div>
+    </div>
+
+}
+

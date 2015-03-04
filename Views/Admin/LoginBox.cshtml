@@ -1,0 +1,84 @@
+﻿<div class="center-block" style="text-align:center">
+    <img src="~/resources/assets/img/logoadmin.jpg" />
+</div>
+    <div id="login-box" class="login-box visible widget-box no-border">
+
+        <div class="widget-body">
+            <div class="widget-main">
+                <h4 class="header blue lighter bigger">
+                    <i class="icon-coffee green"></i>
+                    Ingrese su información
+                </h4>
+
+                <div class="space-6"></div>
+
+                <form id="login-form">
+                    <fieldset>
+                        <label>
+                            <span class="block input-icon input-icon-right">
+                                <input type="text" class="span12" placeholder="E-mail/Usuario" id="emailBox" name="email" />
+                                <i class="icon-user"></i>
+                            </span>
+                        </label>
+
+                        <label>
+                            <span class="block input-icon input-icon-right">
+                                <input type="password" class="span12" placeholder="Contraseña" id="pwdBox" name="pwd" />
+                                <i class="icon-lock"></i>
+                            </span>
+                        </label>
+
+                        <div class="space"></div>
+
+                        <div class="clearfix">
+                            <label class="inline">
+                                <input type="checkbox" id="rememberBox" />
+                                <span class="lbl"> Recordarme</span>
+                            </label>
+
+                            <button class="width-35 pull-right btn btn-small btn-primary start-disabled" disabled="disabled" id="loginBtn">
+                                <i class="icon-key"></i>
+                                Iniciar
+                            </button>
+                        </div>
+
+                        <div class="space-4"></div>
+                    </fieldset>
+                </form>
+
+                @*<div class="social-or-login center">
+                        <span class="bigger-110">Or Login Using</span>
+                    </div>
+
+                    <div class="social-login center">
+                        <a class="btn btn-primary">
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a class="btn btn-info">
+                            <i class="icon-twitter"></i>
+                        </a>
+
+                        <a class="btn btn-danger">
+                            <i class="icon-google-plus"></i>
+                        </a>
+                    </div>*@
+            </div><!--/widget-main-->
+
+            <div class="toolbar clearfix">
+                <div>
+                    <a href="#" onclick="show_box('forgot-box'); return false;" class="forgot-password-link">
+                        <i class="icon-arrow-left"></i>
+                        Olvidé mi contraseña
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#" onclick="show_box('signup-box'); return false;" class="user-signup-link">
+                        Quiero registrarme
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div><!--/widget-body-->
+    </div><!--/login-box-->

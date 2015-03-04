@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html>
+<head>
+    <title>Jazani | Consultora Ambiental  |  @ViewBag.Title  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Jazani, Consultora Ambiental, software, mapa , Medio Ambiente">
+
+    <meta name="author" content="Alfredo Tapia">
+    <meta name="author" content="Joguer Tasaico">
+    <meta name="author" content="Daniel Garcia">
+
+    <script type="text/javascript">
+        var WebFontConfig = {
+            custom: {
+                families: ['FrutigerNextW04-Regular', 'FrutigerNextW04-Medium', 'Frutiger Next W04 Light', 'FrutigerNextW04-Italic'],
+                urls: ['~/resources/css/fonts.css']
+            }
+        };
+        (function () {
+            document.getElementsByTagName("html")[0].className += " wf-loading";
+            var wf = document.createElement('script');
+            wf.src = '~/resources/js/webfont.js';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+
+    <link rel="shortcut icon" href="@Url.Content("~/resources/images/favicon.ico")" />
+    <link rel="apple-touch-icon" href="@Url.Content("~/resources/images/icon57.png")" sizes="57x57" />
+    <link rel="apple-touch-icon" href="@Url.Content("~/resources/images/icon72.png")" sizes="72x72">
+    <link rel="apple-touch-icon" href="@Url.Content("~/resources/images/icon76.png")" sizes="76x76">
+    <link rel="apple-touch-icon" href="@Url.Content("~/resources/images/icon114.png")" sizes="114x114">
+    <link rel="apple-touch-icon" href="@Url.Content("~/resources/images/icon120.png")" sizes="120x120">
+    <link rel="apple-touch-icon" href="@Url.Content("~/resources/images/icon144.png")" sizes="144x144">
+    <link rel="apple-touch-icon" href="@Url.Content("~/resources/images/icon152.png")" sizes="152x152">
+
+
+    <link rel='stylesheet' id='ABeeZee-google-font-css' href='http://fonts.googleapis.com/css?family=ABeeZee%3Aregular%2Citalic&#038;subset=latin&#038;ver=4.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='Droid-Sans-google-font-css' href='http://fonts.googleapis.com/css?family=Droid+Sans%3Aregular%2C700&#038;subset=latin&#038;ver=4.0' type='text/css'>
+    <link rel="stylesheet" id="googleapis-css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic" type="text/css" media="all">
+
+
+
+    <link href="@Url.Content("~/resources/css/clientlibs.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/resources/css/homepage-global-pbl-2.0.css")" rel="stylesheet" />
+
+
+    <script src="@Url.Content("~/resources/js/clientlibs.min.js")"></script>
+
+    <script src="@Url.Content("~/resources/js/Bootstrap.js")"></script>
+  
+    <style>
+        .mboxDefault {
+            visibility: hidden;
+        }
+    </style>
+    <link rel="stylesheet" href="@Url.Content("~/resources/css/fonts.css")">
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="@Url.Content("~/resources/css/ieStyles.css")">
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="@Url.Content("~/resources/css/ie8Styles.css")">
+    <![endif]-->
+    <!--[if lt IE 8]>
+        <script type="text/javascript">
+           document.createElement("nav");
+           document.createElement("header");
+           document.createElement("footer");
+           document.createElement("section");
+           document.createElement("article");
+           document.createElement("aside");
+           document.createElement("hgroup");
+        </script>
+     <link href="~/resources/fonts/font-awesome.min.css" rel="stylesheet" />
+        <![endif]-->
+
+
+
+    <link href="~/resources/css/jazani.css" rel="stylesheet" />
+    <link id='font-awesome-css' href="@Url.Content("~/resources/css/font-awesome.css")" rel="stylesheet" type="text/css" />
+
+    @RenderSection("HeaderSection", false)
+
+</head>
+<body>
+
+   
+    <div class="wrap">
+        <div class="header">
+            <div class="meganav">
+                <div id="adsk-meganav-39">
+                    <div class="meganav-page base-page page">
+
+                        <div id="adsk-site-util" class="hgroup container" data-wat-link-section="globalnav">
+                            <ul class="adsk-util-controls adsk-noBullet container">
+                                <li class="col sB">
+                                    <a class="allCaps adsk-control signin-topnav" href="#" data-wat-link="true" data-wat-loc="globalnav" data-wat-val="Contactenos">
+                                        <i class="fa fa-envelope"></i>   &nbsp; Contáctenos
+                                        <span class="icon adsk-site-control-dArrow"></span>
+                                    </a>
+                                </li>
+
+
+                                <li class="col sB">
+                                    <a id="adsk-global-control" class="allCaps adsk-control" href="@Url.Action("SiteMap", "Home")" data-wat-val="worldwide sites">
+                                        <span class="icon adsk-global-icon"></span>
+                                        Mapa de Sitio
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <div id="adsk-site-groups" class="adsk-slide-down">
+                                <div class="container adsk-site-panel" data-wat-loc="Contactenos">
+
+                                    <div class="parsys adsk-meganav-content">
+
+                                        <div class="parsys_column adskcol-32">
+                                            <div class="parsys_column adskcol-32-c0">
+                                                <div class="rich-text parbase section">
+                                                    <p class="mtm mhx">
+                                                        <span class="s2-2 mbs vam">
+                                                            <i class="fa fa-envelope"></i> Contáctenos
+                                                        </span>
+                                                    </p>
+                                                    <p class="container mbx mhx">
+                                                        <i class="fa fa-map-marker"></i> Ca. Bodegones N° 337 Urbanización Las Gardenias. Santiago de Surco.  Lima 33 . <br />
+                                                    </p>
+                                                    <p class="container mbx mhx">
+                                                        <i class="fa fa-phone"></i> Teléfono: 51-1-2791595
+                                                        <br />
+                                                    </p>
+
+                                                    <p class="container mbx mhx">
+                                                        <i class="fa fa-envelope"></i> Para solicitar nuestro servicios:
+                                                      
+                                                        <a class=" s5 phm vam" href="mailto:informes@jazani.com.pe">
+                                                             informes@jazani.com.pe <span class="cta-arrow"></span>
+
+                                                        </a>
+                                                    </p>
+                                                    <p class="container mbx mhx">
+                                                        <i class="fa fa-envelope"></i> Información de sus productos:
+                                                        <a class=" s5 phm vam" href="mailto:informes@jazani.com.pe">
+                                                             informes@jazani.com.pe <span class="cta-arrow"></span>
+
+                                                        </a>
+                                                    </p>
+                                                    <p class="container mbx mhx">
+                                                        <i class="fa fa-envelope"></i> Envío de su curriculum vitae:
+                                                        <a class=" s5 phm vam" href="mailto:informes@jazani.com.pe">
+                                                           informes@jazani.com.pe <span class="cta-arrow"></span>
+
+                                                        </a>
+
+
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                            <div class="parsys_column adskcol-32-c1">
+                                                <div class="oxygen-status-topnav section">
+                                                    <p class="mtm mbn mhx"><span class="s2-2 vam">Úbicación</span></p>
+                                                    <div class="topnav-oxygen-sign-in">
+                                                        <p class="mtn mbm mhx">
+                                                            <a target="_blank" href="https://goo.gl/maps/nXLXM">
+                                                                <img src="~/resources/images/map.png" />
+                                                            </a>    </p>
+
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div style="clear:both"></div>
+                                    </div>
+                                    <div class="adsk-site-panel-close icon" data-wat-link="true" data-wat-loc="globalnav" data-wat-val="sign-in:close"></div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        @Html.Partial("Componente", AecFramework.Cms.Mvc.Models.MenuModel.MainMenu)
+
+
+
+                    </div>
+
+                </div>
+                <script type="text/javascript">
+                    jQuery(function () { new adsk.navigation.MegaNav(jQuery('#adsk-meganav-39')); });
+                </script>
+            </div>
+        </div>
+
+
+        @RenderBody()
+
+
+
+
+
+
+        <div class="footer">
+            <div class="meganav meganav-footer">
+                <div class="meganav-page base-page page">
+                    <div class="footer">
+                        
+
+                        <div class="legal-footer" data-wat-link-section="footer">
+
+
+
+                            <div class="parsys adsk-meganav-content adsk-parsys">
+
+
+                                <div class="parbase section base-code">
+                                    <div class="left">
+                                        <ul class="adsk-noBullet s5 pbs noDecor">
+                                            <li class="pbs">
+
+
+                                                © 2015 JAZANI Consultora Ambiental SAC. All rights reserved
+                                            </li>
+                                        </ul>
+                                        
+                                        
+                                    </div>
+                                    <div class="right">
+
+
+                                        <ul class="adsk-noBullet s5 pbs noDecor">
+                                          
+                                            <li class="pbs"><img class="vam mrs" alt="Seguir a Jazani en Facebook" src="~/resources/images/facebook.png"><a href="https://es-la.facebook.com/jazani.consultores" target="_blank">Facebook</a></li>
+                                            <li class="pbs"><img class="vam mrs" alt="Seguir a Jazani  Twitter" src="~/resources/images/twitter.png"><a href="https://twitter.com/JazaniConsultor" target="_blank">Twitter</a></li>
+                                            <li class="pbs"><img class="vam mrs" alt="Seguir a Jazani  YouTube" src="~/resources/images/youtube.png"><a href="https://www.youtube.com/channel/UCTmzujxG8Ks5ru_olcD5HhA" target="_blank">YouTube</a></li>
+
+                                        </ul>
+
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                  
+                </div>
+
+
+
+            </div>
+
+        </div>  
+   </div>     
+        <!-- menu-->
+<script src="~/resources/js/clientlibs.min2.js"></script>
+<!-- menu-->
+        <!-- Slide-->
+        <script src="~/resources/js/clientlibs.min.js"></script>
+        <script src="~/resources/js/homepage-global-pbl-2.1.js"></script>
+        <!-- Slide-->
+        <script src="~/resources/js/jquery.js"></script>
+        <!--  Fin Pie  -->
+        @RenderSection("PageScriptSection", false)
+        @RenderSection("ScriptSection", false)
+
+
+
+
+        <div id="fb-root"></div>
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+</body>
+</html>

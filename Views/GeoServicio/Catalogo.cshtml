@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "GeoServidor | Catalogo";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<div id="cuerpo">
+    <div id="Catalogo">
+        <ol class="rastro">
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+            <li><a href="@Url.Action("Index", "GeoServicio")">Geoservicios y Recursos IDE</a></li>
+
+           <li class="activo">Catálogo Metadatos </li>
+        </ol>
+
+        <div class="subcontenedor">
+
+            <div class="col-md-12">
+
+
+                <h1>Catálogo Metadatos </h1>
+
+                <p>  El Catálogo de metadatos del Portal del Geoservidor del Ministerio del Ambiente contiene los metadatos (descripción de los datos) de los productos y servicios que se han generado. Mediante este catálogo los usuarios podrán realizar búsquedas para obtener información geográfica de interés por instituciones sectoriales, en base al ISO 19115 y el Perfil Mínimo de Metadatos de la IDEP.</p>
+                <p>  A través del catálogo de metadatos se puede descargar la ficha de metadatos de los distintos recursos. Algunos de los datos georeferenciados se pueden consultar mediante servicios de mapas interoperables.</p>
+
+
+                <p>
+
+                    <img src="/resources/images/thumbnails/catalogo1.png" />
+
+                </p>
+
+                <p>
+                    El mismo se encuentra implementado sobre el software denominado GeoNetwork OpenSource, que es una herramienta que tiene la capacidad de buscar mapas y documentos a través de un catálogo estructurado y que se encuentra estandarizado en las Normas Internacionales ISO 19115 - 19139 y dentro del marco del proyecto de Infraestructura de Datos Espaciales del Perú (IDEP).
+
+                </p>
+
+
+                <p>
+
+                    <img src="/resources/images/thumbnails/catalogo2.png" />
+
+                </p>
+
+
+
+
+                <p>
+
+                    <div class="limpiar">
+                        <a class="btn">
+                            Ir a Cátalogo metadatos
+                        </a>
+                    </div>
+                </p>
+
+
+                <div class="limpiar"></div>
+                <div class="espaciobottom"></div>
+            </div>
+          
+            <div class="limpiar"></div>
+        </div>
+
+    </div>
+
+        </div>
+   
+        @section PageScriptSection{
+
+        }
+
+
+
+
+

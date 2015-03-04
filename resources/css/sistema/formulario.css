@@ -1,0 +1,286 @@
+/**input[disabled]{background-color:#F0F0F0; color:#303030;} */
+*:focus {  
+    outline: none;  
+}  
+
+form fieldset .sinborde
+{
+    border: 0px;
+}
+
+form label
+{
+    display: inline;
+    padding: 5px;
+}
+
+form p
+{
+    margin: .2em 0;
+    padding: 5px 2px 5px 5px;
+}
+
+    form p > span
+    {
+        color: red;
+        font-size: 13px;
+    }
+
+    form p label
+    {
+        width: 25%;
+        float: left;
+        text-align: left;
+        padding: 0 2px 0 0;
+    }
+/*form div.lbl90 p span span
+{
+    left:103px !important;     position: absolute !important;clear:both;;margin-top: 10px;
+}*/
+
+form div.lbl50 p label
+{
+    width: 50px !important;
+}
+
+form div.lbl60 p label
+{
+    width: 60px !important;
+}
+
+form div.lbl70 p label
+{
+    width: 70px !important;
+}
+
+form div.lbl80 p label
+{
+    width: 80px !important;
+}
+
+form div.lbl90 p label
+{
+    width: 90px !important;
+}
+
+form div.lbl100 p label
+{
+    width: 100px !important;
+}
+
+form div.lbl110 p label
+{
+    width: 110px !important;
+}
+
+form div.lbl125 p label
+{
+    width: 125px !important;
+}
+
+form div.lbl130 p label
+{
+    width: 130px !important;
+}
+
+form div.lbl140 p label
+{
+    width: 140px !important;
+}
+
+form div.lbl150 p label
+{
+    width: 150px !important;
+}
+
+form div.form70 p input[type=text], div.form70 p input[type=password], div.form70 p select, div.form70 p textarea, div.form70 p input[type=file]
+{
+    width: 70px !important;
+}
+
+form div.form80 p input[type=text], div.form80 p input[type=password], div.form80 p select, div.form80 p textarea, div.form80 p input[type=file]
+{
+    width: 80px !important;
+}
+
+form div.form90 p input[type=text], div.form90 p input[type=password], div.form90 p select, div.form90 p textarea, div.form90 p input[type=file]
+{
+    width: 90px !important;
+}
+
+form div.form100 p input[type=text], div.form100 p input[type=password], div.form100 p select, div.form100 p textarea, div.form100 p input[type=file]
+{
+    width: 100px !important;
+}
+
+form div.form120 p input[type=text], div.form120 p input[type=password], div.form120 p select, div.form120 p textarea, div.form120 p input[type=file]
+{
+    width: 120px !important;
+}
+
+form div.form150 p input[type=text], div.form150 p input[type=password], div.form150 p select, div.form150 p textarea, div.form150 p input[type=file]
+{
+    width: 150px !important;
+}
+
+form div.form180 p input[type=text], div.form180 p input[type=password], div.form180 p select, div.form180 p textarea, div.form180 p input[type=file]
+{
+    width: 180px !important;
+}
+
+form div.form200 p input[type=text], div.form200 p input[type=password], div.form200 p select, div.form200 p textarea, div.form200 p input[type=file]
+{
+    width: 200px !important;
+}
+form div.form225 p input[type=text], div.form225 p input[type=password], div.form225 p select, div.form225 p textarea, div.form225 p input[type=file]
+{
+    width: 225px !important;
+}
+form div.form250 p input[type=text], div.form250 p input[type=password], div.form250 p select, div.form250 p textarea, div.form250 p input[type=file]
+{
+    width: 250px !important;
+}
+form div.form300 p input[type=text], div.form300 p input[type=password], div.form300 p select, div.form300 p textarea, div.form300 p input[type=file]
+{
+    width: 300px !important;
+}
+form div.form350 p input[type=text], div.form350 p input[type=password], div.form350 p select, div.form350 p textarea, div.form350 p input[type=file]
+{
+    width: 350px !important;
+}
+form div.form400 p input[type=text], div.form400 p input[type=password], div.form400 p select, div.form400 p textarea, div.form400 p input[type=file]
+{
+    width: 400px !important;
+}
+form textarea
+{
+    resize: none;
+}
+
+form input:focus, select:focus, textarea:focus, button:focus, input[type=file]:focus
+{
+    /*  border: 1px solid #000;*/
+    /*background-color:#72B42D;*/
+    background-color: #E0F0FC;
+    color: #6b8318;
+}
+
+input, textarea, select
+{
+    font-family: Calibri,Verdana,Helvetica !important;
+    font-size: 14px !important;
+}
+
+form input:focus, form textarea:focus , form select:focus{  
+        background: #fff;  
+        border: 1px solid #555;  
+        box-shadow: 0 0 3px #aaa;  
+        padding-right: 70px;  
+    }  
+  
+
+button {  
+    background-color: #9cb12f;  
+    background: -webkit-gradient(linear, left top, left bottom, from(#9cb12f), to(#7e911e));  
+    background: -webkit-linear-gradient(top, #9cb12ff, #7e911e);  
+    background: -moz-linear-gradient(top, #9cb12f, #7e911e);  
+    background: -ms-linear-gradient(top, #9cb12f, #7e911e);  
+    background: -o-linear-gradient(top, #9cb12f, #7e911e);  
+    background: linear-gradient(top, #9cb12f, #7e911ee);  
+    border: 1px solid #c5d574;  
+    border-bottom: 1px solid #5b992b;  
+    border-radius: 3px;  
+    -webkit-border-radius: 3px;  
+    -moz-border-radius: 3px;  
+    -ms-border-radius: 3px;  
+    -o-border-radius: 3px;  
+    box-shadow: inset 0 1px 0 0 #9cb12f;  
+    -webkit-box-shadow: 0 1px 0 0 #9cb12f inset;  
+    -moz-box-shadow: 0 1px 0 0 #9cb12f inset;  
+    -ms-box-shadow: 0 1px 0 0 #9cb12f inset;  
+    -o-box-shadow: 0 1px 0 0 #9cb12f inset;  
+    color: white;  
+    font-weight: bold;  
+    padding: 6px 20px;  
+    text-align: center;  
+    text-shadow: 0 -1px 0 #767c00;  
+}  
+  
+    button:hover {  
+        opacity: .85;  
+        cursor: pointer;  
+    }  
+  
+    button:active {  
+        border: 1px solid #20911e;  
+        box-shadow: 0 0 10px 5px #356b0b inset;  
+        -webkit-box-shadow: 0 0 10px 5px #356b0b inset;  
+        -moz-box-shadow: 0 0 10px 5px #356b0b inset;  
+        -ms-box-shadow: 0 0 10px 5px #356b0b inset;  
+        -o-box-shadow: 0 0 10px 5px #356b0b inset; 
+        color:white; 
+    }  
+    
+    form button
+{
+	margin:10px 5px;
+}
+    
+form input, form textarea, form select {  
+    border: 1px solid #aaa;  
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;  
+    border-radius: 2px;  
+    padding:5px 10px;
+      
+    -moz-transition: padding .25s;  
+    -webkit-transition: padding .25s;  
+    -o-transition: padding .25s;  
+    transition: padding .25s;  
+    width:98%;
+    font-size:14px;
+
+}
+form div label
+{ width:100% ; padding:10px 0 0 10px;}
+
+
+/*estilo link button*/
+.btn {  
+    background-color: #739617;  
+    background: -webkit-gradient(linear, left top, left bottom, from(#739617), to(#7e911e));  
+    background: -webkit-linear-gradient(top, #739617, #7e911e);  
+    background: -moz-linear-gradient(top, #739617, #7e911e);  
+    background: -ms-linear-gradient(top, #739617, #7e911e);  
+    background: -o-linear-gradient(top, #739617, #7e911e);  
+    background: linear-gradient(top, #739617, #7e911ee);  
+    border: 1px solid #c5d574;  
+    border-bottom: 1px solid #5b992b;  
+    border-radius: 3px;  
+    -webkit-border-radius: 3px;  
+    -moz-border-radius: 3px;  
+    -ms-border-radius: 3px;  
+    -o-border-radius: 3px;  
+    box-shadow: inset 0 1px 0 0 #739617;  
+    -webkit-box-shadow: 0 1px 0 0 #739617 inset;  
+    -moz-box-shadow: 0 1px 0 0 #739617 inset;  
+    -ms-box-shadow: 0 1px 0 0 #739617 inset;  
+    -o-box-shadow: 0 1px 0 0 #739617 inset;  
+    color: white;  
+    font-weight: bold;  
+    padding: 6px 20px;  
+    text-align: center;  
+    text-shadow: 0 -1px 0 #767c00;  
+}  
+  
+    .btn:hover {  
+        opacity: .85;  
+        cursor: pointer;  
+        color:#fff;
+    } 
+     .btn:focus {  
+         
+        cursor: pointer;  
+        color:#fff;
+         background-color: #739617; 
+    } 
+   

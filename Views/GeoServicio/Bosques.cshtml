@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "GeoServidor | GeoBosques";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<div id="cuerpo">
+    <div id="GeoBosques">
+        <ol class="rastro">
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+            <li class="activo">GeoBosques</li>
+
+        </ol>
+
+        <div class="subcontenedor">
+
+            <div class="col-md-12">
+
+                <h1>GeoBosques</h1>
+                <p>
+                    El Programa Bosques tiene como objetivo general:<br />
+                    Conservar 54 millones de hectáreas de bosques tropicales como una contribución a la mitigación del cambio climático y al desarrollo sostenible.
+                </p>
+                <p>
+                    <img src="/resources/images/thumbnails/bosques1.png" />
+                </p>
+                <p>
+                    <div class="limpiar">
+                        <a href="http://geoservidor.minam.gob.pe/geobosque" class="btn">
+                            Ir a GeoBosques
+                        </a>
+                    </div>
+                </p>
+            </div>
+            <div class="limpiar"></div>
+            <div class="espaciobottom"></div>
+                </div>
+
+                <div class="limpiar"></div>
+            </div>
+</div>
+
+@section PageScriptSection{
+
+}
+

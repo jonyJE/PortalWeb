@@ -1,0 +1,73 @@
+﻿.dias, .horas, .minutos, .segundos
+{
+    color: #474747;
+    height: 38px;
+    padding-left: 5px;
+    font-size: 18px;
+    width: 100px;
+}
+
+.dias
+{
+    background-image: url(../../Images/reloj/dias.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.horas
+{
+    background-image: url(../../Images/reloj/horas.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.minutos
+{
+    background-image: url(../../Images/reloj/minutos.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.segundos
+{
+    background-image: url(../../Images/reloj/segundos.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+/******* Reloj Animado ******/
+#reloj
+{
+    position: relative;
+    width: 85px !Important;
+    height: 110px !Important;
+    background: url(../../images/reloj/reloj.png);
+    background-repeat: no-repeat;
+    list-style: none;
+}
+
+#segundo, #minuto, #hora
+{
+    position: absolute;
+    width: 7px;
+    height: 110px;
+    top: 0px;
+    left: 51px;
+}
+
+#segundo
+{
+    background: url(../../images/reloj/manosegundo.png);
+    z-index: 3;
+}
+
+#minuto
+{
+    background: url(../../images/reloj/manominuto.png);
+    z-index: 2;
+}
+
+#hora
+{
+    background: url(../../images/reloj/manohora.png);
+    z-index: 1;
+}

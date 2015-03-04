@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = " GeoServidor | Visualizador y procesos SIG";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+<div id="cuerpo">
+    <div id="visualizador">
+        <ol class="rastro">
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+            <li class="activo">Visualizador y procesos SIG</li>
+
+
+        </ol>
+
+        <div class="subcontenedor">
+
+            <div class="col-md-12">
+
+                <h1>Visualizador y procesos SIG </h1>               
+
+                <img src="/resources/images/thumbnails/visualizador.jpg" />
+
+
+
+                <p>
+                    El Desarrollo de aplicaciones web interactivas,permite el análisis y consulta avanzada de la información territorial del país de manera interactiva, haciendo uso de los servicios web de mapas WMS, servicios de entidades Web (WFS), servicios de cobertura Web (WCS) y servicios de lenguaje de marcado (KML).
+                </p>
+                <p>
+                    El Geoservidor del MINAM forma parte de la red de información geográfica de América Latina y el Caribe a través del GeoPortal del Programa GeoSUR.
+                </p>
+                <p>
+                    A través de este servidor de mapas por internet se puede consultar la base de datos sobre la situación territorial y ambiental del país. Las herramientas que se pone a disposición permite activar y desactivar capas de información, buscar un dato o lugar específico, acercar o alejar el espacio de visualización, realizar mediciones de distancias, consultar coordenadas, realizar análisis de superposición y obtener mapas y reportes especializados acerca de las bases de datos existentes.
+                </p>
+
+                <p>
+
+                    <div class="limpiar">
+                        <a href="http://terra-i.org/terra-i/data/data-terra-i_peru" class="btn" id="btnenviar">
+                            Visualizador Geoservidor 2.0
+                        </a>
+                    </div>
+                </p>
+
+                <div class="limpiar"></div>
+
+                <div class="espaciobottom"></div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+@section PageScriptSection{
+
+}
+
+
+
+
+

@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "GeoServidor | Intercambiobd";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<ol class="rastro">
+    <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+    <li><a href="@Url.Action("Index", "GeoServicio")">Geoservicios y Recursos IDE</a></li>
+
+    <li class="activo">Intercambio de Base de Datos </li>
+</ol>
+
+<div id="contenedorprincipal">
+
+    <div class="contenedor">
+        <div class="row">
+            <!-- inicio contenido izquierdo -->
+
+            <div class="col-md-12">
+                <section id="seccioncontenido">
+                    <header>
+                        <h1>Intercambio de Base de Datos </h1>
+
+
+                    </header>
+
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12">
+                            <section id="bloquenoticias">
+                                <p>
+                                    Es una herramienta que contribuye a generar buenas prácticas en gestión pública, permitiendo la transparencia e intercambio de información entre las diferentes instituciones del sector ambiental <b>(SERNANP, SENAMHI, IGP, OEFA, IIAP)</b> e instituciones sectoriales, gobiernos regionales, locales, universidades y organismos de la sociedad civil; con quienes llevamos acuerdos institucionales para compartir dicha información.
+                                </p>
+                                <p>
+
+                                    <img src="/resources/images/thumbnails/basedatos1.png" />
+
+                                </p>
+
+                                <p>
+                                    En este repositorio de datos podrá encontrar información geoespacial en formato vectorial y de imágenes que podrá descargar y utilizar en sus análisis territoriales.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Desarrollo de un módulo de acceso para la descarga de información tal como se aprecia en el link siguiente:<br />
+                                        <a href="http://geoservidor.minam.gob.pe/geoservidor/download.aspx"> Descargar información vectorial</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="http://geoservidor.minam.gob.pe/geoservidor/download_raster.aspx">  Descargar información Aster GDEM</a>
+                                    </li>
+
+                                    <li><a href="http://geoservidor.minam.gob.pe/rds/login.aspx?ReturnUrl=%2frds%2fDefault.aspx">Ingreso de usuarios registrados al modulo de Intercambio de Datos</a></li>
+
+                                </ul>
+
+                            </section>
+
+
+                            <div class="limpiar"></div>
+                            <div class="espaciobottom"></div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+            <!-- fin contenido derecho -->
+
+        </div>
+
+    </div>
+
+</div>
+@section PageScriptSection{
+
+}
+

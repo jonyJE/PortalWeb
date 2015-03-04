@@ -1,0 +1,93 @@
+.adsk-prod-topfeatures {
+	width: 612px;
+}
+.diag-line:before {
+	background-image: url(../../images/diag-line-ie8.png);
+	background-repeat: no-repeat;
+	content: '';
+	border-left: 0;
+	position: absolute; top: 0; bottom: 0; left: 42%;
+	width: 11px;
+	height: 25px;
+	-ms-transform: rotate(0deg);	
+}
+.diag-line2:before {
+	background-image: url(../../images/diag-line2-ie8.png);
+	background-repeat: no-repeat;
+	content: '';
+	border-left: 0;
+	position: absolute; top: 12px; bottom: 0; left: -3px;
+	width: 7px;
+	height: 21px;
+	-ms-transform: rotate(0deg);
+}
+.adsk-product-banner[style] {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00fefefe', endColorstr='#00f3f3f3');
+}
+.adsk-adlm-form .split-button, .adsk-adlm-form .split-button .split-button-wrapper {
+	min-width: 180px !important;
+}
+.adsk-adlm-form .split-button-all .split-button-wrapper a {
+	min-width: 130px !important;
+}
+.adsk-adlm-form  .split-button ul {
+	width: 98% !important;
+}
+.adsk-adlm-form .split-button-all .split-button-wrapper span {
+	background-image: url(../../images/cta-arrow-ie8.png);
+	background-repeat: no-repeat;
+	background-position: 12px 7px;
+}
+.adsk-adlm-form .split-button-all .split-button-wrapper span {
+	background-image: url(../../images/adlm-arrow-ie8.png);
+	background-repeat: no-repeat;
+	background-position: 8px 10px;
+}
+.adsk-adlm-form .split-button-all .split-button-wrapper span b:before, 
+.adsk-adlm-form .split-button-all .split-button-wrapper span b:after {
+border: 0;
+}
+a.adsk-cta {
+	padding-right: 37px;
+	margin-right: 12px;
+}
+.adsk-cta .cta-arrow {
+	background-image: url(../../images/cta-arrow-ie8.png);
+	background-repeat: no-repeat;
+	background-position: 12px 7px;
+	width: 25px;
+	height: 23px;
+	border: 0;
+	top: auto;
+	right: 0;
+	bottom:0;
+}
+.adsk-cta-dl .cta-arrow {
+	background-image: url(../../images/cta-download-arrow-ie8.png);
+	background-repeat: no-repeat;
+	background-position: 2px 13px;
+	height: 24px;
+	right: 2px;
+	bottom: 0;
+}
+.adsk-cta-dl .cta-arrow:before, .adsk-cta .cta-arrow:before {border: 0;}
+
+.adsk-cta .cta-arrow:after, .adsk-cta-dl .cta-arrow:after {border:0;}
+.adsk-purch-options-double, .adsk-purch-options-double > .col:first-child, .adsk-purch-options-double > .col:first-child > h3, .adsk-purch-options-double > .col:first-child > div {
+	z-index: 0;
+}
+.adsk-purch-options-double > .col:first-child {
+	width: 299px;
+	margin-right: 1px;
+}
+div[class*="adsk-purch-options"] > .col:first-child:after {
+	height: 100%;
+	width: 1px;
+}
+div[class*="adsk-purch-options"] .grid {
+	padding: 15px 0 12px;
+}
+div[class*="adsk-purch-options"] h3 {
+	padding: 9px 1.14286em 1.07142em;
+}
+

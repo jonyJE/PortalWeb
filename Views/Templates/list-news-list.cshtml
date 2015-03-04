@@ -1,0 +1,75 @@
+﻿@model IEnumerable<AecFramework.Cms.Content>
+@foreach (var item in Model)
+{
+    <!-- 
+    <div class="itemnoticia">
+        <h3>
+            <a href="@Url.ContentUrl(item)">  @item.Title</a>
+        </h3>
+        <div class="contenedorimagen">
+            <a href="@Url.ContentUrl(item)">
+                <img src="@Url.ContentImage(item, 800, 600, false)" />
+            </a>
+        </div>
+        <figure class="meta">
+            <div class="izquierda">
+                <i class="fa fa-calendar"></i><b> @(item.Created.ToString("dd/MM/yyyy"))</b>
+                <i class="fa fa-list"></i>Categoría:
+                <b> @string.Join(", ", item.Categories)</b>
+            </div>
+            <div class="tags">
+                @foreach (var tag in item.Tags)
+                {
+                    if (!string.IsNullOrEmpty(tag))
+                    {
+                        <a href="@Url.SectionUrl(item.Section, new {tag=tag })" class="tag article">@tag</a>
+                    }
+                }
+            </div>
+        </figure>
+        <p>
+            @item.Description
+        </p>
+        <p>
+            <a class="btn" href="@Url.ContentUrl(item)">  Ver Detalle</a>
+        </p>
+    </div>
+
+-->
+    
+  
+
+    <div class="parsys_column adskcol-08">
+        <div class="parsys_column adskcol-08-c0">
+            <div class="rich-text parbase section">
+
+                <p><a class="  noDecor" href="@Url.ContentUrl(item)">
+                         <img alt="@item.Title" style="margin-right: 12px;" src="@Url.ContentImage(item, 252, 150, true)">
+
+  </a></p>
+       
+
+            </div>
+        </div><div class="parsys_column adskcol-08-c1">
+            <div class="section-header parbase section">
+
+                <h3 class="s4-b mdGrey">
+                   @item.Title 
+                </h3>
+            </div>
+            <div class="rich-text parbase section">
+
+                 <p>
+                 @item.Description
+                     </p>
+                <p><br />
+                     <b><i class="fa fa-calendar"></i> @(item.Created.ToString("dd/MM/yyyy"))</b>
+                </p>
+                <p><a href="@Url.ContentUrl(item)" class="adsk-cta s5 phm">Ver Detalle<span class="cta-arrow"></span></a></p>
+
+
+            </div>
+        </div>
+    </div>
+      <hr class="bb3 mvl size98of98">
+}

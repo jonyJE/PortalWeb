@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "GeoServidor | Mapas";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+    <ol class="rastro">
+        <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+        <li class="activo">Mapa</li>
+    </ol>
+
+<div id="contenedorprincipal">
+    
+    <div class="contenedor">
+        <div class="row">
+            <!-- inicio contenido izquierdo -->
+
+            <div class="col-md-12">
+                <section id="seccioncontenido">
+                    <header>
+                        <h1>Mapas</h1>
+
+
+                    </header>
+
+                    <div class="row">
+
+                        <div class="col-md-12 ">
+                            <section id="bloquenoticias">
+                                <p>
+
+                                    <img src="@Url.Content("~/resources/images/thumbnails/mapa.jpg")" />
+
+                                </p>
+                                <p>
+                                    Esta herramienta permite visualizar y descargar mapas en formatos estandar (PDF), los cuales han sido generados por los diversos proyectos dentro del Ministerio del Ambiente y con el apoyo de otras instituciones con las que interactúa para el desarrollo de sus funciones.
+                                </p>
+                                <p>
+                                    Contiene información de mapas estáticos (a una fecha de actualización determinada), los cuales pueden ser consultados y visualizados por el público en general.
+                                </p>
+
+                            </section>
+
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <div class="limpiar"></div>
+                <div class="espaciobottom"></div>
+            </div>
+            <!-- fin contenido derecho -->
+
+        </div>
+
+    </div>
+
+</div>
+@section PageScriptSection{
+    
+}
+
+
+
+

@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Riesgos";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<div id="cuerpo">
+    <div id="monitoreo">
+        <ol class="rastro">
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+            <li><a href="@Url.Action("Index", "Monitoreo")">Monitoreo e Información Territorial</a></li>
+            <li class="activo">Riesgos y Vulnerabilidad</li>
+        </ol>
+
+
+        <div class="subcontenedor">
+
+            <div class="col-md-12">
+
+                <h1>Riesgos y Vulnerabilidad </h1>
+
+
+                <p>
+
+                    <img src="/resources/images/thumbnails/riesgos.png" />
+
+                </p>
+                <p>
+                    El MINAM como Autoridad Nacional que tiene la responsabilidad de establecer la política, los criterios, las herramientas y los procedimientos de carácter general en materia de Ordenamiento Territorial, para lo cual ha elaborado el Mapa de Susceptibilidad Física de Zonas Propensas a Inundaciones y Deslizamientos en la Costa y Sierra frente a la ocurrencia de Eventos Hidrometeorológicos Extremos con el objetivo de brindar información de calidad, oportuna y pertinente, que permita tomar acciones de prevención a nivel nacional, regional y local en el caso de la evidencia del Fenómeno de El Niño, contribuyendo de esta manera a la reducción de desastres, la gestión del riesgo y la planificación territorial. Los decisores políticos podrán contar con un instrumento técnico-científico que contribuya a disminuir las pérdidas de vidas humanas y económicas en sus respectivos ámbitos jurisdiccionales.
+
+                </p>
+
+
+
+
+                <p>
+
+                    <div class="limpiar">
+                        <a href="http://geoservidor.minam.gob.pe/susceptibilidad/visor" class="btn" id="btnenviar">
+                            Ir a Mapa de Susceptibilidad
+                        </a>
+                    </div>
+                </p>
+                <div class="limpiar"></div>
+                <div class="espaciobottom"></div>
+
+            </div>
+            <!-- fin contenido derecho -->
+
+        </div>
+
+    </div>
+
+        </div>
+
+        @section PageScriptSection{
+
+        }
+
+
+
+
+

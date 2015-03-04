@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "GeoServidor | Documento";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<div id="cuerpo">
+    <div id="Documento">
+        <ol class="rastro">
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+            <li><a href="@Url.Action("Index", "GeoServicio")">Geoservicios y Recursos IDE</a></li>
+
+            <li class="activo">Documentación </li>
+        </ol>
+        <div class="subcontenedor">
+
+            <div class="col-md-12">
+                <h1>Documentación </h1>
+                <p>
+                    En esta sección se colocará información técnica acerca de nuestros servicios y herramientas a fin de contribuir a un mejor uso de los mismos y compartir las experiencias adquiridas en el desarrollo e implementación del Sistema de Información Geográfica del MINAM. Aquí estarán disponibles nuestros manuales, guías y documentación técnica que se generan dentro de cada uno de los proyectos que desarrollamos a nivel nacional.
+
+                </p>
+
+                <p>
+                    <img src="/resources/images/thumbnails/documentos1.png" />
+                </p>
+                <!--
+                 <ul>
+                     <li>
+
+                             Desarrollo de un módulo para la búsqueda de documentos tal como se aprecia en el link siguiente:<br />
+
+                         <a href="http://geoservidor.minam.gob.pe/geoservidor/documentacion.aspx">Documentación </a>
+
+
+
+                     </li>
+
+                 </ul>
+            -->
+                <p>
+                    <div class="limpiar">
+                        <a class="btn" id="btnenviar">
+                            Ir a Documentación
+                        </a>
+                    </div>
+                </p>
+                <div class="limpiar"></div>
+                <div class="espaciobottom"></div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+@section PageScriptSection{
+
+}
+
+

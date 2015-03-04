@@ -1,0 +1,36 @@
+﻿@model IEnumerable<AecFramework.Cms.Mvc.Models.MenuModel>
+@{
+    var path = Request.Path;
+}
+
+
+       
+        @foreach (var item in Model)
+        {
+            var haschild = item.SubItems != null && item.SubItems.Count > 0;
+            <div class="list-container">
+                <div class="list-header"><h4><a href="@item.Url">@item.Title</a></h4></div>
+            
+                @if (haschild)
+                {
+                    <ul>
+                        @foreach (var subitem in item.SubItems)
+                        {
+                            <li><a href="@subitem.Url">@subitem.Title</a></li>
+                        }
+                    </ul>
+                }
+            </div>
+
+        }
+      
+     
+
+
+
+
+
+
+
+
+

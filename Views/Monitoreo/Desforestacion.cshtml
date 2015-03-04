@@ -1,0 +1,174 @@
+﻿@{
+    ViewBag.Title = "Desforestacion";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<div id="cuerpo">
+    <div id="monitoreo">
+        <ol class="rastro">
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+            <li><a href="@Url.Action("Index", "Monitoreo")">Monitoreo e Información Territorial</a></li>
+
+            <li class="activo">Degradacion y Deforestación, ClasLite</li>
+        </ol>
+        <div class="subcontenedor">
+
+            <div class="col-md-12">
+
+                <h1>Degradacion y Deforestación, ClasLite</h1>
+
+
+
+                <p>
+                    <img src="/resources/images/thumbnails/desforestacion1.png" />
+
+                </p>
+
+                <h3>
+                    MAPA DE ANALISIS DE CAMBIO DE COBERTURA DE BOSQUES A NO BOSQUE POR DEFORESTACION DE LA AMAZONIA PERUANA ELABORADO POR EL MINISTERIO DEL AMBIENTE
+                </h3>
+                <h3>
+                    ANTECEDENTES
+                </h3>
+                <p>
+                    Desde finales del año 2009, el Ministerio del Ambiente a través de la Dirección General de Ordenamiento Territorial, inició el desarrollo de actividades técnicas y de fortalecimiento de capacidades para contribuir en los procesos dirigidos al Ordenamiento Territorial.
+                </p>
+                <p>
+                    En el marco de estas actividades se desarrolló una primera etapa del análisis de Bosque - No Bosque para el periodo 2000-2005-2009 en las que se abordó también el desarrollo de mejoras en el sistema de análisis de imágenes, desarrollo de protocolos de evaluación y validación, y campañas de sobre vuelos del Observatorio Aéreo de Carnegie (CAO) que apoyó la validación de los resultados.
+                </p>
+                <p>
+                    La segunda etapa del proceso de análisis comprendió la actualización y cuantificación de la cobertura de bosque y deforestación de la Amazonía Peruana para el periodo 2009-2010-2011, el que ha sido posible gracias a la aplicación de una herramienta de análisis de mayor detalle como el Software CLASlite 3.0, la selección e integración de un número considerable de imágenes LANDSAT y MODIS para la obtención de mosaicos libres de nubes; así como, la incorporación de procedimientos de auditoría de procesamiento de imágenes para mejorar el nivel de confianza en los resultados.
+                </p>
+                <h3>
+                    METODOLOGIA APLICADA
+                </h3>
+                <p>
+                    El análisis de cambio de cobertura de bosque a no bosque por deforestación se aplicó sobre una superficie de 78’469,220 has, que corresponde a ocho departamentos (Amazonas, San Martin, Junín, Loreto, Pasco, Ucayali, Huánuco y Cusco), cubierto por 42 escenas de imágenes del satélite LANDSAT y 02 escenas de MODIS TERRA para cada uno de los años 2000, 2005, 2009, 2010 y 2011. En términos generales el método aplicado comprende los siguientes pasos:
+                </p>
+                <p>
+
+                    a) Revisión y selección de imágenes LANDSAT 5 Y LANDSAT 7 con corrección L1T;
+                    b) Corrección radiométrica y atmosférica de imágenes seleccionadas;
+                    c) Análisis de compuestos por pixeles para la generación de mosaicos de imágenes de reflectancia y de cobertura fraccional libre de Nubes y sombras;
+                    d) Aplicación de criterios para definición de Cobertura de Bosque-No Bosque.
+                    e) Aplicación de criterios para definición de cambio: Deforestación y Degradación.
+                </p>
+
+
+                <p>
+                    <img src="/resources/images/thumbnails/desforestacion2.png" />
+
+                </p>
+
+                <h3>RESULTADOS</h3>
+                <p>
+                    Los resultados obtenidos a partir de la metodología aplicada, comprende información de la cobertura de bosque, cambios de bosque a no bosque con un nivel de detalle de 0.09 has (equivalente a 1 pixel de 30mts), sobre el cual se ha realizado un control visual con el fin de separar los cambios de la cobertura de bosques por deforestación; de esta manera los resultados comprende:
+                </p>
+                <p>
+                    a. Cobertura de cambio de bosque a no bosque por deforestación en el periodo 2009-2010 y 2010-2011.
+                    b. Cobertura de cambio de bosque a no bosque por deforestación por ocho departamentos.
+                    c. Cobertura de Bosque y Cambio de Bosque a No Bosque para el periodo 2000-2005-2009.
+                </p>
+
+
+                <p>
+                    <img src="/resources/images/thumbnails/desforestacion3.png" />
+
+                </p>
+
+                <h3> DESCARGA DE LOS RESULTADOS DEL ANALISIS</h3>
+                <ul>
+                    <li>
+                        Memorias Técnicas:
+                        <p>
+                            <ol>
+                                <li> <a href="/resources/upload/MEMORIA_TECNICA_ANALISIS_2000_2009.pdf"> Memoria Técnica de la Cuantificación de Cobertura de Bosque y Cambio de Bosque a No Bosque (Periodo 2000-2005-2009) en formato PDF. <i class="fa fa-download"></i></a></li>
+
+                                <li><a href="/resources/upload/MEMORIA_TECNICA_ANALISIS_2009_2011.pdf">Memoria Técnica de la Cuantificación de los Cambios de la Cobertura de Bosque y Deforestación en el Ambito de la Amazonía Peruana (Periodo 2009-2010-2011) en formato PDF.<i class="fa fa-download"></i></a></li>
+
+                            </ol>
+                        </p>
+                    </li>
+                    <li>
+                        Mapas de Cobertura de Bosque y Deforestacion a nivel nacional y por regiones en formato PDF:
+
+
+                        <ol>
+                            <li>
+                                <a href="/resources/upload/Cobertura de Bosque y Cambio de Bosque a No Bosque_2000_2009.pdf"> Mapa de Cobertura de Bosque y Cambio de Bosque a No Bosque (Periodo 2000-2005-2009).<i class="fa fa-download"></i></a>
+                                <br />
+                                <small>Mapa de cambio de cobertura de bosque a no bosque para los periodos 2000, 2005 y 2009, el mapa incluye áreas de cambio por actividad antrópica y natural.</small>
+                            </li>
+                            <li>
+
+                                <a href="/resources/upload/Mapa_Cambio_Cobertura_Boscosa_2009_2011.pdf">    Mapa de Cambio de Cobertura de Bosque a No Bosque por Deforestación en la Amazonía Peruana (Periodo 2009-2010-2011).<i class="fa fa-download"></i></a><br />
+                                <small>Mapa de deforestación por departamentos de los periodos 2009, 2010 y 2011, donde se observa los cambios obtenidos por actividad antrópica.</small>
+
+
+                            </li>
+                            <li>
+                                <a href="/resources/upload/Cambio de Cobertura Boscosa_Huanuco_2000_2009.pdf"> Mapa de Cambio de Cobertura de Bosque en el Periodo 2000-2009 (Dpto. de Huanuco).<i class="fa fa-download"></i></a>
+                            </li>
+                            <li>
+                                <a href="/resources/upload/Cambio de Cobertura Boscosa_Cusco_2000_2009.pdf"> Mapa de Cambio de Cobertura de Bosque en el Periodo 2000-2009 (Dpto. de Cusco).<i class="fa fa-download"></i></a>
+                            </li>
+                            <li>
+                                <a href="/resources/upload/Cambio de Cobertura Boscosa_Amazonas_2000_2009.pdf"> Mapa de Cambio de Cobertura de Bosque en el Periodo 2000-2009 (Dpto. de Amazonas).<i class="fa fa-download"></i></a>
+                            </li>
+                            <li>
+                                <a href="/resources/upload/Cambio de Cobertura Boscosa_San Martin_2000_2009.pdf"> Mapa de Cambio de Cobertura de Bosque en el Periodo 2000-2009 (Dpto. de San Martin).<i class="fa fa-download"></i></a>
+                            </li>
+                            <li>
+                                <a href="/resources/upload/Cambio de Cobertura Boscosa_Junin_2000_2009.pdf"> Mapa de Cambio de Cobertura de Bosque en el Periodo 2000-2009 (Dpto. de Junin).<i class="fa fa-download"></i></a>
+                            </li>
+                            <li>
+                                <a href="/resources/upload/Cambio de Cobertura Boscosa_Loreto_2000_2009.pdf"> Mapa de Cambio de Cobertura de Bosque en el Periodo 2000-2009 (Dpto. de Loreto).<i class="fa fa-download"></i></a>
+                            </li>
+                            <li>
+                                <a href="/resources/upload/Cambio de Cobertura Boscosa_Pasco_2000_2009.pdf"> Mapa de Cambio de Cobertura de Bosque en el Periodo 2000-2009 (Dpto. de Pasco).<i class="fa fa-download"></i></a>
+                            </li>
+                            <li>
+                                <a href="/resources/upload/Cambio de Cobertura Boscosa_Ucayali_2000_2009.pdf"> Mapa de Cambio de Cobertura de Bosque en el Periodo 2000-2009 (Dpto. de Ucayali).<i class="fa fa-download"></i></a>
+                            </li>
+
+                        </ol>
+
+                    </li>
+                    <li>
+                        Mapas Interactivos:
+                        <p>
+                            <ol>
+                                <li><a href="http://geoservidor.minam.gob.pe/flexviewers/deforestacion/"> Visor del Mapa Interactivo</a></li>
+                            </ol>
+                        </p>
+                    </li>
+                    <li>
+                        Pedidos de fortalecimiento de capacidades en los Gobiernos Regionales - 2013
+                        <p>
+
+                            El MINAM a través de la Dirección General de Ordenamiento Territorial, ha recibido durante el año 2013 pedidos en el marco del Fortalecimiento de Capacidades en los Gobiernos Regionales en "Análisis de los Cambios de la Cobertura y Uso de la Tierra". Las mismas pueden ser revisadas en los siguientes link:
+                            <ol>
+                                <li> <a href="/resources/upload/PEDIDOS FORTALECIMIENTO DE CAPACIDADES EN LOS GOBIERNOS REGIONALES 2013.pdf"> Pedidos de Capacitacion, actas, acuerdos y lista de participantes.<i class="fa fa-download"></i></a></li>
+                                <li> <a href="/resources/upload/REPORTE_CAPACITACION.pdf"> Reporte del proceso de entrega de información para el análisis territorial y la capacitación de la metodología del análisis de cobertura de bosque y deforestación. <i class="fa fa-download"></i>    </a></li>
+                            </ol>
+                        </p>
+                    </li>
+                </ul>
+
+                <div class="limpiar"></div>
+                <div class="espaciobottom"></div>
+
+            </div>
+            <!-- fin contenido derecho -->
+
+        </div>
+
+    </div>
+
+        </div>
+
+
+        @section PageScriptSection{
+
+        }
+

@@ -1,0 +1,156 @@
+﻿@model AecFramework.Cms.Section
+@{
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+<style>
+
+    .fb_iframe_widget iframe {
+ width:260px !important;
+ border:0px;
+}
+</style>
+<div class="section main">
+    <div>
+        <div class="adsk-breadcrumb breadcrumb">
+
+            <div class="section adsk-breadcrumb container setPos">
+                <ul class="adsk-inlineList">
+                    <li><a href="@Url.Action("Index", "Home")"><i class="fa fa-home"></i> Inicio</a></li>
+                    <li class="activo"><i class="fa fa-bars"></i> @(Request.QueryString["cat"] ?? "Todas las categorías")</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="banner">
+            <div class="section adsk-static-banner adsk-authorBG expand" style="height: 60px;">
+                <div class="grid adsk-industry-banner-image">
+                    <div class="parbase adsk-image image">
+
+                        <h1 class="s0 allCaps dkGrey"> <b><i class="fa fa-rss"></i> @Model.Title</b></h1>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        </div>
+
+    <div class="container content">
+
+        <div class="col adsk-pNav sizeleft">
+
+
+
+            <aside id="categories">
+                <div class="br5 bb4 set-rel pa-1-0 estore-config-head" style="background-color: #c8dac2" id="mf185">
+                    <h2 class="h2head"><i class="fa fa-bars"></i> Categorías:</h2>
+</div>
+                    <div class="section prl">
+
+                        <div class="adsk-i-left parsys iparsys">
+
+                            <div class="iparys_inherited">
+
+                                <div class="adsk-i-left parsys iparsys">
+
+                                    <div class="left-navigation">
+                                        <nav class="leftNavigation" data-wat-link-section="leftnav">
+
+
+                                            <ul>
+                                                @foreach (var cat in Model.GetCategories())
+                                                {
+                                                    <li><a href="@Url.SectionUrl(Model, new {cat=cat })"><i class="fa fa-angle-right"></i> @cat</a></li>
+                                                }
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </aside>
+            <aside id="twitter">
+
+                <div class="br5 bb4 set-rel pa-1-0 estore-config-head" style="background-color: #c8dac2" id="mf185">
+                    <h2 class="h2head"><i class="fa fa-share-alt"></i> Social:</h2>
+                </div>
+
+                <a class="twitter-timeline" href="https://twitter.com/JazaniConsultor" data-widget-id="559808847200923648">Tweets por el @@JazaniConsultor.</a>
+                <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+            </aside>
+            <aside id="facebook">
+                <div id="blockfacebook">
+                    <br />
+                    <div class="br5 bb4 set-rel pa-1-0 estore-config-head" style="background-color: #c8dac2" id="mf185">
+                        <h2 class="h2head"><i class="fa fa-facebook-official"></i> Facebook:</h2>
+                    </div>
+
+                    <div class="fb-like-box" data-href="https://www.facebook.com/pages/Jazani-Consultora-Ambiental/1428199100805359" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+
+                    <div id="fb-root"></div>
+                    <script>
+                        (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s); js.id = id;
+                            js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+
+                </div>
+            </aside>
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="col adsk-content sizeright">
+            <div class="br5 bb4 set-rel pa-1-0 estore-config-head" style="background-color: #c8dac2" id="mf185">
+                <h2 class="h2head">
+                    <i class="fa fa-bars"></i> @(Request.QueryString["cat"] ?? "Todas las categorías")
+                    </h2>
+                </div>
+
+
+                    <div id="lista-noticias">
+                        @Html.Action("ContentList", "CmsContents", new { view = "list-news-list", id = Model.SectionId, pageSize = 3, mode = ViewBag.Mode, criteria = ViewBag.Criteria })
+                    </div>
+                    <div id="loading" style="display:none">
+                        <img src="~/resources/images/loading.gif" />
+                    </div>
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+        
+                      
+             <div style=" width:100%; padding-bottom:60px;">
+
+</div>         
+                     
+              
+        <input type="hidden" id="nextPageUrl" value="@(Url.Action("ContentList", "CmsContents", new { view = "list-news-list", id = Model.SectionId, pageSize = 3, mode = ViewBag.Mode, criteria = ViewBag.Criteria }))" />
+        @section PageScriptSection{
+            <script type="text/javascript" src="/AecMvc/Scripts/pagination.js"></script>
+            <script type="text/javascript" src="/resources/js/news.list.js"></script>
+        }

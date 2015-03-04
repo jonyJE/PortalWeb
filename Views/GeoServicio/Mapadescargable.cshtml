@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "GeoServidor | Mapas descargables";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+
+<div id="cuerpo">
+    <div id="convenios">
+        <ol class="rastro">
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+            <li><a href="@Url.Action("Index", "GeoServicio")">Geoservicios y Recursos IDE</a></li>
+
+            <li class="activo">    Mapas descargables</li>
+        </ol>
+        <div class="subcontenedor">
+
+            <div class="col-md-12">
+                <section>
+
+                    <h1> Mapas descargables </h1>
+                    <p>
+                        Esta herramienta permite visualizar y descargar mapas en formatos estandar (PDF), los cuales han sido
+                        generados por los diversos proyectos dentro del Ministerio del Ambiente y con el apoyo de otras instituciones
+                        con las que interactúa para el desarrollo de sus funciones.
+
+                    </p>
+                    <p>
+                        <img src="/resources/images/thumbnails/mapas1.png" />
+                    </p>
+
+                    <div class="limpiar">
+                        <a class="btn" id="btnenviar">
+                            Ir a Mapas descargables
+                        </a>
+                    </div>
+
+
+
+                </section>
+                <div class="limpiar"></div>
+                <div class="espaciobottom"></div>
+
+            </div>
+        </div>
+        <div class="limpiar"></div>
+    </div>
+</div>
+
+@section PageScriptSection{
+
+}
+

@@ -1,0 +1,135 @@
+﻿@model IEnumerable<AecFramework.Cms.Mvc.Models.MenuModel>
+@{
+    var path = Request.Path;
+}
+
+
+
+<div>
+    <div class="hgroup adsk-mast-topnav container">
+
+        <div class="adsk-logo col">
+
+
+
+            <a href="@Url.Action("Index", "Home")" id="adsk-logo-url">
+
+                <img alt="Jazani" src="@Url.Content("~/resources/images/logo.png")" />
+            </a>
+        </div>
+
+        <div class="nav col">
+            <nav id="primary_nav_wrap">
+                <ul>
+
+                    <li class="@(path == "/" ? "current-menu-item" : "")"><a href="@Url.Action("Index", "Home")"><i class="fa fa-home"></i></a></li>
+                    @foreach (var item in Model)
+                    {
+                        var haschild = item.SubItems != null && item.SubItems.Count > 0;
+                        <li class="@(haschild ? "has-child" : "") @(path.StartsWith("/" + item.Key) ? "current-menu-item" : "")">
+                            <a href="@item.Url">@item.Title <span class="icon adsk-tier1-dArrow"></span></a>
+                            @if (haschild)
+                            {
+                                <ul>
+                                    @foreach (var subitem in item.SubItems)
+                                    {
+                                        <li><a href="@subitem.Url">@subitem.Title </a></li>
+                                    }
+                                </ul>
+                            }
+                        </li>
+                    }
+
+                   
+                </ul>
+            </nav>
+
+            </div>
+        </div>
+
+
+    <div id="adsk-meganav" class="container adsk-slide-down">
+        @foreach (var item1 in Model)
+        {
+            var haschild = item1.SubItems != null && item1.SubItems.Count > 0;
+
+
+            <div class="adsk-meganav-group container">
+
+
+
+                @if (haschild)
+                {
+
+                    <div class=" parsys adsk-meganav-content adsk-parsys">
+                        <div class="parsys_column adskcol-16">
+
+                            <div class="parsys_column adskcol-16-c0">
+                                <div class="parbase section base-code">
+
+
+                                    <style>
+                                        .parsys_column .adskcol-16-c5 {
+                                            margin-right: 0 !important;
+                                        }
+                                    </style>
+
+                                </div>
+                                <div class="section-header parbase section">
+
+                                    <h3 class="s5 sB allCaps">
+                                        @item1.Title :
+                                    </h3>
+                                </div>
+                                <div class="rich-text parbase section">
+
+                                    <ul class="adsk-noBullet">
+                                        @foreach (var subitem in item1.SubItems)
+                                        {
+                                            <li><a href="@subitem.Url"><span class="icon adsk-tier2-icon"></span>@subitem.Title</a></li>
+                                        }
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                }
+                else
+                {
+                    <div class="section-header parbase section">
+
+                        <h3 class="s5 sB allCaps">
+                            Noticias:
+                        </h3>
+                    </div>
+                    <div class="rich-text parbase section">
+                        <ul class="adsk-noBullet">
+                            <li>
+                                <a href="/noticias">
+                                    <span class="icon adsk-tier2-icon"></span>
+                                    Todas las noticias
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                }
+
+
+            </div>
+
+        }
+    </div>
+
+
+    <div class="adsk-meganav-control" id="adsk-meganav-control-close" data-wat-link="true" data-wat-loc="meganav">
+        <p id="adsk-close-meganav" class="s5 allCaps container">
+            <b class="adsk-fold setPos"></b>
+            <span class="icon adsk-meganav-close setPos"></span>
+            <span class="adsk-close-text sb">Cerrar</span>
+        </p>
+    </div>
+    </div>
+
